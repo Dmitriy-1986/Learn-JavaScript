@@ -1,4 +1,7 @@
+const name = 'Иван-Царевич';
+const element = <h1>Здравствуй, {name}!</h1>;
+
 ReactDOM.render(
-  <h1>Привет, мир!</h1>,
+  element,
   document.getElementById('root')
 );
