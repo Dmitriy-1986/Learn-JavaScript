@@ -22,7 +22,7 @@ class TodoApp extends React.Component {
         React.createElement(
           "label",
           { htmlFor: "new-todo" },
-          "What needs to be done?"
+          "Задачи:"
         ),
         React.createElement("input", {
           id: "new-todo",
