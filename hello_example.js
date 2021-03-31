@@ -10,4 +10,4 @@ class HelloMessage extends React.Component {
 }
 
 ReactDOM.render(React.createElement(HelloMessage, { name: "Taylor" }),
-document.getElementById('hello_example'));
+document.getElementById('#hello_example'));
