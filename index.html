@@ -31,15 +31,13 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 
-  <button type="button" class="btn btn-secondary" data-container="body"
-        data-toggle="popover" data-placement="top"
-        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-     Popover on top
-  </button>
-
-
 </form>
 
+  <!-- Кнопки с popovers -->
+  <button type="button" class="btn btn-primary" data-toggle="popover" title="Заголовок панели" data-content="Текст панели.">Кнопка с popover</button>
+  <button type="button" class="btn btn-danger" data-toggle="popover" title="Заголовок панели" data-content="Очень длинный текст, который демонстрирует максимальную возможную ширину всплывающей панели.">Кнопка с popover</button>
+  <button type="button" class="btn btn-info" data-toggle="popover" title="Заголовок панели" data-content="Текст панели.">Кнопка с popover</button>
+  <button type="button" class="btn btn-warning" data-toggle="popover" title="Заголовок панели" data-content="Очень длинный текст, который демонстрирует максимальную возможную ширину всплывающей панели.">Кнопка с popover</button>
 
 </div>
 
@@ -51,10 +49,15 @@
     
     <script>
      /* Note: A custom script is used to activate popovers: */
-     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl)
-     })
+     $(document).ready(function(){
+     //Инициализация всплывающей панели для
+     //элементов веб-страницы, имеющих атрибут
+     //data-toggle="popover"
+     $('[data-toggle="popover"]').popover({
+     //Установление направления отображения popover
+       placement : 'top'
+       });
+     });
     </script>
 
   </body>
