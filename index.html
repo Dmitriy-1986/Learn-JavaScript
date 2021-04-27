@@ -36,6 +36,24 @@
     </div>
 
   </div>
+------
+<script>
+	function selectText(containerid) {
+		if (document.selection) { // IE
+			var range = document.body.createTextRange();
+			range.moveToElementText(document.getElementById(containerid));
+			range.select();
+		} else if (window.getSelection) {
+			var range = document.createRange();
+			range.selectNode(document.getElementById(containerid));
+			window.getSelection().removeAllRanges();
+			window.getSelection().addRange(range);
+		}
+	}
+</script>
+
+<div id="example" onclick="selectText('example')">Hello This div content have to be select.</div>
+---------
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
