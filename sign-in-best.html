@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            font-family: sans-serif;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        legend {
+            color: #103;
+            font-size: 1rem;
+        }
+
+        input {
+            padding: 8px;
+            width: 220px;
+        }
+
+        input[type=button] {
+            width: 100%;
+            color: #103;
+            font-size: 1rem;
+            width: 240px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content" class="content">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi asperiores cupiditate eveniet
+            repellat omnis aut dolores rerum laboriosam! Temporibus architecto cupiditate commodi error officia adipisci
+            veniam perferendis totam perspiciatis.</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi asperiores cupiditate eveniet
+            repellat omnis aut dolores rerum laboriosam! Temporibus architecto cupiditate commodi error officia adipisci
+            veniam perferendis totam perspiciatis.</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi asperiores cupiditate eveniet
+            repellat omnis aut dolores rerum laboriosam! Temporibus architecto cupiditate commodi error officia adipisci
+            veniam perferendis totam perspiciatis.</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi asperiores cupiditate eveniet
+            repellat omnis aut dolores rerum laboriosam! Temporibus architecto cupiditate commodi error officia adipisci
+            veniam perferendis totam perspiciatis.</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi asperiores cupiditate eveniet
+            repellat omnis aut dolores rerum laboriosam! Temporibus architecto cupiditate commodi error officia adipisci
+            veniam perferendis totam perspiciatis.</h1>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero excepturi asperiores cupiditate eveniet
+            repellat omnis aut dolores rerum laboriosam! Temporibus architecto cupiditate commodi error officia adipisci
+            veniam perferendis totam perspiciatis.</h1>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <form action="" method="" name="formSignIn">
+                <fieldset>
+                    <legend>Войти</legend>
+
+                    <legend>Логин</legend>
+                    <input type="text" name="login" id="login" placeholder="Введите логин...">
+                    <br><br>
+                    <legend>Пароль</legend>
+                    <input type="password" name="password" id="password" placeholder="Введите пароль...">
+                    <br>
+                    <br>
+                    <input type="button" value="Отправить" onclick="check()">
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        let content = document.getElementById('content');
+
+        window.onload = function () {
+            modal.style.display = "flex";
+            content.style.display = "none";
+        }
+
+        function check() {
+            let login = document.formSignIn.login.value;
+            let password = document.formSignIn.password.value;
+
+            if ((login === '') && (password === '')) {
+                alert('Пустая строка, заполните поле ввода!');
+                content.style.display = "none";
+            } else if ((login == 'admin') && (password == 'qwerty')) {
+                modal.style.display = "none";
+                content.style.display = "block";
+            } else {
+                alert('Не верный логин или пароль!');
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

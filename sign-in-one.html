@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In!</title>
+ 
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            font-family: sans-serif;
+        }
+
+        .container-sign-in {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        fieldset {
+            display: inline;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            /*   padding-top: 100px;   */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            /* background-color: #0f1115; */
+            font-family: sans-serif;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        legend {
+            color: #103;
+            font-size: 1rem;
+        }
+
+        input {
+            padding: 8px;
+            width: 220px;
+        }
+
+        input[type=button] {
+            width: 100%;
+            color: #103;
+            font-size: 1rem;
+            width: 240px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sign-in">
+        <form action="" method="" name="formSignIn">
+            <fieldset>
+                <legend>Sign In!</legend>
+
+                <legend>Login</legend>
+                <input type="text" name="login" id="login">
+                <br><br>
+                <legend>Password</legend>
+                <input type="password" name="password" id="password">
+                <br>
+                <br>
+                <input type="button" value="Submit" onclick="check()">
+            </fieldset>
+        </form>
+    </div>
+    <script>
+        function check() {
+            let login = document.formSignIn.login.value;
+            let password = document.formSignIn.password.value;
+
+            if ((login == 'admin') && (password == 'qwerty')) {
+                window.open("page.html");
+            } else {
+                alert("Не верный логин или пароль!");
+            }
+        }
+    </script>
+</body>
+
+</html>
