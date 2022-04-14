@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /*  body {
+            color: #222;
+            background-color: #fff;
+        }
+        a {
+            color: #0033cc;
+        } */
+        button {
+            border: none;
+            background-color: #ffffff;
+        }
+        .dark-theme {
+            color: #eee;
+            background-color: #121212;
+        }
+        .dark-theme a {
+            color: #809fff;
+        }
+        .btn-toggle::after {
+            content: url(./wb_sunny_black.svg);
+        }
+        .dark-theme .btn-toggle::after {
+            content: url(./nightlight_round_black.svg);
+            fill: #eee;
+        }
+        .dark-theme button {
+            background-color: #121212;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn-toggle">
+        
+    </button>
+    <h1>Темная или светлая тема</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veniam hic asperiores ratione, facere,
+        consequatur distinctio illum blanditiis, dolores placeat exercitationem ea totam repudiandae. Saepe
+        necessitatibus recusandae dolorem ex rem.
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, quas quo temporibus, ab obcaecati architecto
+        doloribus iusto molestias animi, dicta commodi deleniti? Atque illo quas voluptatem dolores asperiores sed
+        reiciendis?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam quaerat iure doloribus architecto totam
+        esse alias optio dolorem corporis voluptate, ex asperiores sit ab praesentium odit pariatur. Expedita, nam?
+    </p>
+
+    <script>
+        const btn = document.querySelector('.btn-toggle');
+        btn.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+        });
+
+    </script>
+</body>
+
+</html>
