@@ -1,7 +1,8 @@
 https://dmitriy-1986.github.io/repo-name-1/
 
-sign-in-best.html
+https://dmitriy-1986.github.io/repo-name-1/sign-in-best.html
 
-sign-in-one.html
+https://dmitriy-1986.github.io/repo-name-1/sign-in-one.html
 
-darkLightTheme.html
+https://dmitriy-1986.github.io/repo-name-1/darkLightTheme.html
+
