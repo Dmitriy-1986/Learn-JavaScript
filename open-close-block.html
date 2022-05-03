@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #btn {
+            display: inline-block;
+            padding: 10px;
+            color: blue;
+            cursor: pointer;
+        }
+
+        #block {
+            display: none;
+        }
+
+        #btn::after {
+            content: '[Смотреть скрытый текст...]';
+        }
+
+        #close {
+            display: none;
+            padding: 10px;
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="btn"></div>
+    <div id="block">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, quia. Quos labore sit, nihil saepe,
+            exercitationem ipsum repellat nesciunt laudantium in ab amet error temporibus aspernatur sint ad incidunt
+            debitis.</p>
+    </div>
+    <div id="close">[Спрятать текст...]</div>
+
+    <script>
+        let btn = document.getElementById('btn');
+        let block = document.getElementById('block');
+        let closeBtn = document.getElementById('close');
+
+        btn.onclick = function () {
+            block.style.display = 'block';
+            closeBtn.style.display = 'block';
+
+            if (block.style.display = 'block') {
+                btn.style.display = 'none';
+            }
+        };
+
+        closeBtn.onclick = function () {
+            block.style.display = 'none';
+            btn.style.display = 'inline-block';
+            closeBtn.style.display = 'none';
+        };
+    </script>
+</body>
+
+</html>
