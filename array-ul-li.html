@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+    let ul = document.createElement('ul');
+    root.appendChild(ul);
+    let a = ['one', 'two', 'three', 'foure', 'five'];
+    for (let i = 0; i < a.length; i++) {
+      let li = document.createElement('li');
+      ul.appendChild(li);
+      li.innerHTML = a[i];
+    }
+  </script>
+</body>
+
+</html>
