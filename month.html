@@ -8,27 +8,30 @@
     <title>Document</title>
 </head>
 <body>
+    
 <script>
-let root = document.createElement('div'); 
-root.id = 'root';
-const months = [
-                'Січень',
-                'Лютий', 
-                'Березень',
-                'Квітень',
-                'Травень',
-                'Червень',
-                'Липень',
-                'Серпень',
-                'Вересень',
-                'Жовтень',
-                'Листопад',
-                'Грудень'
-];
+    let body = document.querySelector('body');  
+    let root = document.createElement('div'); 
+    body.appendChild(root);
+    root.id = 'root';
+    const months = [
+                    'Січень',
+                    'Лютий', 
+                    'Березень',
+                    'Квітень',
+                    'Травень',
+                    'Червень',
+                    'Липень',
+                    'Серпень',
+                    'Вересень',
+                    'Жовтень',
+                    'Листопад',
+                    'Грудень'
+    ];
 
-const d = new Date();
-let month = months[d.getMonth()];
-root.innerHTML = month;
+    const d = new Date();
+    let month = months[d.getMonth()];
+    root.innerHTML = month;
 </script>
 </body>
 </htnl>
