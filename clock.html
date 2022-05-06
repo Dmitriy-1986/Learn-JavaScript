@@ -1,11 +1,26 @@
-const body = document.querySelector('body');
-const div = document.createElement('div');
-body.appendChild(div);
+<!DOCTYPE html>
+<html lang="en">
 
-function clock() {
-  const date = new Date();
-  const time = date.toLocaleTimeString(); 
-  div.innerHTML = time;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 
-setInterval(clock, 1000);
+  <body>
+
+    <script>
+      const body = document.querySelector('body');
+      const div = document.createElement('div');
+      body.appendChild(div);
+
+      function clock() {
+        const date = new Date();
+        const time = date.toLocaleTimeString(); 
+        div.innerHTML = time;
+      }
+
+      setInterval(clock, 1000);
+    </script>
+  </body>
+</html>
