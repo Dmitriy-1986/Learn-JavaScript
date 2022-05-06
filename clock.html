@@ -1,0 +1,11 @@
+const body = document.querySelector('body');
+const div = document.createElement('div');
+body.appendChild(div);
+
+function clock() {
+  const date = new Date();
+  const time = date.toLocaleTimeString(); 
+  div.innerHTML = time;
+}
+
+setInterval(clock, 1000);
