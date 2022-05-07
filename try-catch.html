@@ -22,12 +22,12 @@
       root.appendChild(p);
     }
     catch (e) {
-      let mark = document.createElement('mark');
-      mark.style.background = 'red';
-      mark.style.color = 'white';
-      mark.style.padding = '10px';
-      mark.innerText = ' Attention! - ' + e;
-      root.appendChild(mark);
+      let center = document.createElement('center');
+      center.style.background = 'red';
+      center.style.color = 'white';
+      center.style.padding = '10px';
+      center.innerText = ' Attention! - ' + e;
+      root.appendChild(center);
     }
     finally {
       console.log('finally - выполняеться после кода с ошибкой');
