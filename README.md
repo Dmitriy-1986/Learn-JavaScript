@@ -15,3 +15,5 @@ https://dmitriy-1986.github.io/repo-name-1/array-ul-li.html
 https://dmitriy-1986.github.io/repo-name-1/month.html
 
 https://dmitriy-1986.github.io/repo-name-1/clock.html
+
+https://dmitriy-1986.github.io/repo-name-1/try-catch.html
