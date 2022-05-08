@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    .main-title {
+      background-color: yellow;
+      color: white;
+      text-align: center;
+      text-shadow: 1px 1px 3px #000000;
+      padding: 5px 0;
+      margin-bottom: 0;
+    }
+
+    .sub-title {
+      margin-top: 0;
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 3px #000000;
+      padding: 5px 0;
+      border-bottom: 1px solid yellow;
+    }
+
+    .for-desc {
+      margin-left: auto;
+      margin-bottom: 10px;
+      text-align: right;
+      width: 40%;
+      color: #666666;
+    }
+
+    .img {
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    @media (max-width: 600px) {
+      .for-desc {
+        font-size: 14px;
+        width: 60%;
+      }
+
+      .img {
+        width: 80%;
+      }
+    }
+
+    @media (max-height: 460px) {
+      .for-desc {
+        margin: 0 auto;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+      }
+
+      .img {
+        width: 70%;
+      }
+    }
+
+    @media (max-height: 410px) {
+      .img {
+        width: 60%;
+      }
+    }
+
+    @media (max-height: 380px) {
+      .img {
+        width: 50%;
+      }
+    }
+
+    @media (max-height: 340px) {
+      .img {
+        width: 30%;
+      }
+    }
+
+    @media (max-height: 280px) {
+      .img {
+        width: 20%;
+      }
+    }
+
+    @media (max-height: 280px) {
+      .img {
+        display: none;
+      }
+    }
+
+    @media (max-height: 180px) {
+      .wrapper {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper" class="wrapper">
+    <h1 id="mainTitle" class="main-title"></h1>
+    <h2 id="subTitle" class="sub-title"></h2>
+    <p id="forDesc" class="for-desc"></p>
+    <img id="img" class="img">
+  </div>
+
+
+  <script>
+    const book = {
+      'main title': 'JavaScript',
+      'sub-title': 'Pocket Ref',
+      'for': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae qui dolore corporis tempora incidunt cumque quaerat id, quis eos. Esse!',
+      'image': './rhinoceros-sondaicus.png',
+    }
+
+    /* Заголовок */
+    let mainTitle = document.getElementById('mainTitle');
+    mainTitle.innerText = book["main title"];
+
+    /* Подзаголовок */
+    let subTitle = document.getElementById('subTitle');
+    subTitle.innerText = book["sub-title"];
+
+    /* Описание */
+    let forDesc = document.getElementById('forDesc');
+    forDesc.innerText = book.for;
+
+    /* Картинка */
+    let img = document.getElementById('img');
+    img.src = book.image;
+    img.alt = book["main title"];
+  </script>
+</body>
+
+</html>
