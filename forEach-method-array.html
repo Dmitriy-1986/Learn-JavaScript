@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div id="root">
+    <ol id="list"></ol>
+  </div>
+
+  <script>
+    const data = [
+      'Lorem, ipsum dolor.',
+      'Lorem, ipsum dolor.',
+      'Lorem, ipsum dolor.',
+      'Lorem, ipsum dolor.',
+      'Lorem, ipsum dolor.',
+      'Lorem, ipsum dolor.',
+      'Lorem, ipsum dolor.',
+      'Lorem, ipsum dolor.',
+      'Lorem, ipsum dolor.',
+      'Lorem, ipsum dolor.',
+    ];
+    const root = document.getElementById('root');
+    const list = document.getElementById('list');
+
+    data.forEach((el, i) => {
+      const li = document.createElement('li');
+      li.innerHTML = data[i];
+      list.appendChild(li);
+    });
+  </script>
+</body>
+
+</html>
