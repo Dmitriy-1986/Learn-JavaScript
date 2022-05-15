@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    const table = document.createElement('table');
+
+    const ul = document.createElement('ul');
+
+
+
+    ul.id = 'pagination';
+
+
+    let users = [
+      {name: 'name1', surname: '-1'}, 
+      {name: 'name2', surname: '-2'}, 
+      {name: 'name3', surname: '-3'}, 
+      {name: 'name4', surname: '-4'}, 
+      {name: 'name5', surname: '-5'}, 
+      {name: 'name6', surname: '-6'},
+                {name: 'name4', surname: '-7'}, 
+      {name: 'name5', surname: '-8'}, 
+      {name: 'name6', surname: '-9'},
+
+    ];
+
+
+    const body = document.querySelector('body');
+
+    body.appendChild(table);
+
+    body.appendChild(ul);
+
+    let notesOnPage = 3;
+
+    let countOfItems = Math.ceil(users.length/notesOnPage);
+
+
+    let showPage = (function() {
+      let active; 
+      return function(item){
+          if(active){
+            active.classList.remove('active');
+          }
+          active = item; 
+          item.classList.add('active');
+          let pageNum = +item.innerHTML; 
+          let start = (pageNum - 1)*notesOnPage; 
+          let end = start + notesOnPage;
+          let notes = users.slice(start, end); 
+          table.innerHTML = ''; 
+          for(let note of notes){
+            let tr = document.createElement('tr');
+            table.appendChild(tr); 
+            createCell(note.name, tr); 
+            createCell(note.surname, tr);
+          }
+      };
+    }()); 
+
+    let items = []; 
+    for(let i = 1; i <= countOfItems; i++){
+      let li = document.createElement('li');
+    ul.appendChild(li);
+      li.innerHTML = i; 
+      pagination.appendChild(li);
+      items.push(li);
+    } 
+    showPage(items[0]);
+
+    for(let item of items){
+      item.addEventListener('click',  function(){showPage(this);});
+    } 
+
+    function createCell(text, tr) {
+      let td = document.createElement('td'); 
+      td.innerHTML = text; tr.appendChild(td);
+    }
+
+  </script>
+</body>
+
+</html>
