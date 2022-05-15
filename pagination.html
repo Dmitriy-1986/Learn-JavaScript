@@ -11,10 +11,7 @@
 
   <script>
     const table = document.createElement('table');
-
     const ul = document.createElement('ul');
-
-
 
     ul.id = 'pagination';
 
@@ -26,23 +23,16 @@
       {name: 'name4', surname: '-4'}, 
       {name: 'name5', surname: '-5'}, 
       {name: 'name6', surname: '-6'},
-                {name: 'name4', surname: '-7'}, 
+      {name: 'name4', surname: '-7'}, 
       {name: 'name5', surname: '-8'}, 
       {name: 'name6', surname: '-9'},
-
     ];
 
-
     const body = document.querySelector('body');
-
     body.appendChild(table);
-
     body.appendChild(ul);
-
     let notesOnPage = 3;
-
     let countOfItems = Math.ceil(users.length/notesOnPage);
-
 
     let showPage = (function() {
       let active; 
@@ -84,7 +74,6 @@
       let td = document.createElement('td'); 
       td.innerHTML = text; tr.appendChild(td);
     }
-
   </script>
 </body>
 
