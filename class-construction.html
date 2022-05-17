@@ -14,17 +14,17 @@
     /* Constructor */
     class User {
       constructor(username, password) {
-        this.username = username;
-        this.password = password;
+        this.username = '<i>name: </i><b>' + username + '</b>';
+        this.password = ', <i>password: </i><b>' + password + '</b>';
       }
     }
-    let name = 'JhonDoe';
+    let name = 'Jhon Doe';
     let passwd = 'qwerty123';
 
-    const person = new User(name, passwd);
+    const person = new User( name, passwd);
 
     for (let i in person) {
-      root.innerHTML += person[i] + ' ';
+      root.innerHTML += person[i];
     }
 
   </script>
