@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+    /* Constructor */
+    class User {
+      constructor(username, password) {
+        this.username = username;
+        this.password = password;
+      }
+    }
+    let name = 'JhonDoe';
+    let passwd = 'qwerty123';
+
+    const person = new User(name, passwd);
+
+    for (let i in person) {
+      root.innerHTML += person[i] + ' ';
+    }
+
+  </script>
+</body>
+
+</html>
