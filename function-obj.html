@@ -45,6 +45,27 @@
     obj.add();
     obj.name = 'Juan'; obj.surname = 'Gonzalez';
     obj.add();
+    
+    /* 3 */
+    root.innerHTML += `<hr>`;
+    
+    function myFunc(author, title, desc) {
+      author = author || 'no author';
+      title = title || 'no title';
+      desc = desc || 'no description';
+
+      let a = {
+        author: author,
+        title: title,
+        desc: desc,
+      };
+      root.innerHTML += `<div class='\div'\><h3>${a.author}</h3><h1>${a.title}</h1><p>${a.desc}</p></div>`;
+    }
+
+    let book  = myFunc('Author', 'Title', '');
+        book  = myFunc('Author', 'Title', 'Decription');
+        book  = myFunc('Author', 'Title', 'Lorem ipsum dolor sit amet.');
+        book  = myFunc('Author', 'Title', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, dolor!');
 
   </script>
 </body>
