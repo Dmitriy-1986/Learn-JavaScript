@@ -11,10 +11,11 @@
   <div id="root"></div>
 
   <script>
-    const root = document.getElementById('root');
+  const root = document.getElementById('root');
 
     let guest, user, admin;
 
+    /* 1 */
     function auth(name, surname) {
       let a = {
         name: name,
@@ -26,6 +27,24 @@
     quest = auth('Ziyad', 'Hernandez');
     user = auth('Juan', 'Gonzalez');
     admin = auth('Trey', 'Miller');
+
+    /* 2 */
+    let obj = {
+      name: 'name',
+      surname: 'surname',
+
+      add: function () {
+        this.result = `<h3>${this.surname}  ${this.name}</h3>`;
+        root.innerHTML += this.result;
+      }
+    };
+
+    obj.name = 'Trey'; obj.surname = 'Miller';
+    obj.add();
+    obj.name = 'Ziyad'; obj.surname = 'Hernandez';
+    obj.add();
+    obj.name = 'Juan'; obj.surname = 'Gonzalez';
+    obj.add();
 
   </script>
 </body>
