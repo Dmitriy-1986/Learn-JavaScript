@@ -30,7 +30,7 @@ https://dmitriy-1986.github.io/repo-name-1/pagination.html  | <a href="https://g
 
 https://dmitriy-1986.github.io/repo-name-1/function-obj.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/function-obj.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/repo-name-1/class-construction.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/class-construction.html ">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 
