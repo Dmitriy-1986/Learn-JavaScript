@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .btn-read-me {
+      cursor: pointer;
+    }
+
+    .hidden-txt {
+      color: red;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="read-me-block">
+    <button class="btn-read-me">Read Me</button>
+    <p></p>
+  </div>
+
+  <script>
+    document.querySelector('.btn-read-me').addEventListener('click', () => {
+      document.querySelector('.read-me-block p').innerText = txt;
+      document.querySelector('.read-me-block p').innerHTML += '<span class="hidden-txt"> [ \xD7 ] </span>';
+      document.querySelector('.btn-read-me').style.display = 'none';
+      document.querySelector('.hidden-txt').addEventListener('click', () => {
+        document.querySelector('.read-me-block p').innerText = ' ';
+        document.querySelector('.btn-read-me').style.display = 'block';
+      });
+    });
+
+    let txt = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit corporis commodi in consequuntur nemo inventore et ';
+    txt += 'aut, repellendus aspernatur obcaecati reiciendis non quibusdam ipsum nam hic dolores, ullam accusantium modi error, ';
+    txt += 'recusandae illum? Impedit, distinctio quod. Quo ipsum assumenda nisi facere consequatur. Beatae quis adipisci ex nobis ';
+    txt += 'dolore dolorem laudantium, temporibus quam repellendus molestiae quibusdam eaque cupiditate magni asperiores similique ';
+    txt += 'cum reprehenderit quas nesciunt esse quae rerum. Distinctio sunt voluptates voluptatum? Recusandae, magni ea ';
+    txt += ' aspernatur minus, eveniet culpa voluptas vero accusantium vitae provident harum quos nihil voluptatem odit quisquam ';
+    txt += 'molestias inventore. Dolorem minus nostrum nobis ad optio architecto aliquid doloribus? ';
+  </script>
+</body>
+
+</html>
