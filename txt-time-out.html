@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+    (function () {
+      const root = document.getElementById('root');
+
+      let h1 = document.createElement('h1');
+      root.appendChild(h1);
+      h1.innerText = 'Hello World!';
+
+      function txtTimeOut(x) {
+        let p = document.createElement('p');
+        root.appendChild(p);
+        p.innerText = x;
+      }
+
+      let txt1 = '//Lorem ipsum dolor sit amet. -1'
+      let txt2 = '//Lorem ipsum dolor sit amet. -2'
+      let txt3 = '//Lorem ipsum dolor sit amet. -3'
+      let txt4 = '//Lorem ipsum dolor sit amet. -4'
+      let txt5 = '//Lorem ipsum dolor sit amet. -5'
+      let txt6 = '//Lorem ipsum dolor sit amet. -6'
+      let txt7 = '//Lorem ipsum dolor sit amet. -7'
+      let txt8 = '//Lorem ipsum dolor sit amet. -8'
+      let txt9 = '//Lorem ipsum dolor sit amet. -9'
+      let txt10 = '//Lorem ipsum dolor sit amet. -10'
+      setTimeout(() => {
+        txtTimeOut(txt1)
+      }, 1000);
+      setTimeout(() => {
+        txtTimeOut(txt2)
+      }, 2000);
+      setTimeout(() => {
+        txtTimeOut(txt3)
+      }, 3000);
+      setTimeout(() => {
+        txtTimeOut(txt4)
+      }, 4000);
+      setTimeout(() => {
+        txtTimeOut(txt5)
+      }, 5000);
+      setTimeout(() => {
+        txtTimeOut(txt6)
+      }, 6000);
+      setTimeout(() => {
+        txtTimeOut(txt7)
+      }, 7000);
+      setTimeout(() => {
+        txtTimeOut(txt8)
+      }, 8000);
+      setTimeout(() => {
+        txtTimeOut(txt9)
+      }, 9000);
+      setTimeout(() => {
+        txtTimeOut(txt10)
+      }, 10000);
+      
+    }());
+  </script>
+</body>
+
+</html>
