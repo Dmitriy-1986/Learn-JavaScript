@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  
+  <style>
+    .decoration {
+      text-decoration: green wavy underline;
+    }
+  </style>
 </head>
 
 <body>
@@ -15,7 +21,7 @@
    function init(x) {
         var name = x; 
         function displayName() { 
-            root.innerHTML += `<i>name and surname: </i><h2>${x}</h2>`;  
+            root.innerHTML += `<h2 class="decoration">${x}</h2><i>name and surname</i>`;  
         }
         displayName();
     }
