@@ -8,7 +8,8 @@
   
   <style>
     .decoration {
-      text-decoration: green wavy underline;
+      text-decoration: aqua wavy underline;
+      margin-bottom: 5px;
     }
   </style>
 </head>
@@ -18,7 +19,8 @@
 
   <script>
     const root = document.querySelector('#root');
-   function init(x) {
+    
+    function init(x) {
         var name = x; 
         function displayName() { 
             root.innerHTML += `<h2 class="decoration">${x}</h2><i>name and surname</i>`;  
