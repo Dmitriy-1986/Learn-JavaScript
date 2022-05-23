@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+    const root = document.getElementById('root');
+    root.innerHTML = '<h2>Hello World!</h2>';
+
+    let timeAndDate = document.createElement('p');
+    root.appendChild(timeAndDate);
+
+    function dateFunc() {
+      let date = new Date();
+      timeAndDate.innerHTML = `<i> ${date} </i><hr>`;
+    }
+
+    setInterval(dateFunc, 1000);
+
+    let lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+    lorem += 'Iste unde aspernatur nostrum perferendis quas culpa ut earum cupiditate '
+    lorem += 'dicta repudiandae similique ipsum, nam quidem? Eius ratione fugit quia '
+    lorem += 'harum ad reiciendis rem! Aut tenetur voluptatibus debitis? Deserunt, illum '
+    lorem += 'voluptatibus? Culpa placeat quas harum soluta porro molestiae? Consectetur '
+    lorem += 'qui maiores itaque provident nobis laborum sed repudiandae? Nisi soluta '
+    lorem += 'repellendus sequi voluptatem placeat doloribus, illo aliquam, commodi a '
+    lorem += 'consequatur fuga repellat possimus praesentium laudantium ut recusandae '
+    lorem += 'optio fugiat natus nostrum ipsam delectus quidem? Inventore ut odit dolore '
+    lorem += 'commodi, harum consectetur eum quidem unde provident quas soluta iste '
+    lorem += 'reiciendis dolorem nemo aperiam alias expedita sed necessitatibus cum, et '
+    lorem += 'mollitia. Ratione voluptates id ex, iusto repellat repudiandae inventore '
+    lorem += 'perspiciatis quaerat exercitationem. Tempore, velit incidunt! Natus beatae '
+    lorem += 'expedita alias ipsum, nisi laboriosam eius obcaecati quae perspiciatis '
+    lorem += 'eaque quod nam veniam qui ratione? Praesentium impedit repellendus asperiores odio at.';
+
+    function paragraph(x) {
+      let p = document.createElement('p');
+      root.appendChild(p);
+      p.innerText = x;
+    }
+
+    paragraph(lorem);
+    paragraph(lorem);
+    paragraph(lorem);
+    paragraph(lorem);
+
+  </script>
+</body>
+
+</html>
