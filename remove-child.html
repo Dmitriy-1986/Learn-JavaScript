@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+    const root = document.getElementById('root');
+
+    /* Upper Case' */
+    function h2Upper(text) {
+      let h2 = document.createElement('h2');
+      let txtH2 = text;
+      let txtH2Upper = txtH2.toUpperCase();
+      h2.innerText = txtH2Upper;
+      root.appendChild(h2);
+    }
+
+    let txtUpper = 'Upper Case';
+    h2Upper(txtUpper);
+
+    /* Lower Case */
+    function h2Lower(text) {
+      let h2 = document.createElement('h2');
+      let txtH2 = text;
+      let txtH2Lower = txtH2.toLowerCase();
+      h2.innerText = txtH2Lower;
+      root.appendChild(h2);
+    }
+
+    let txtLower = 'Lower Case';
+    h2Lower(txtLower);
+
+    let button = document.createElement('button');
+    button.innerText = 'Удалить заголовок!';
+    root.appendChild(button);
+
+    button.addEventListener('click', () => {
+      let h2 = document.querySelector('h2');
+
+      if (h2 instanceof Node) {
+        root.removeChild(h2);
+      } else {
+        let div = document.createElement('div');
+        div.style.margin = '5px';
+        root.appendChild(div);
+
+        let mark = document.createElement('mark');
+        mark.style.background = 'yellow';
+        mark.style.display = 'inline-block';
+        mark.style.padding = '5px';
+        mark.innerHTML = 'Внимание! Заголовки были удалены...';
+        div.appendChild(mark);
+
+        if (div instanceof Node) {
+          let btnMark = document.createElement('button');
+          btnMark.innerText = 'x';
+          btnMark.style.background = 'red';
+          mark.appendChild(btnMark);
+
+          btnMark.addEventListener('click', () => {
+            root.removeChild(div);
+            root.removeChild(button);
+
+            let btnReload = document.createElement('button');
+            btnReload.innerText = 'Перезагрузить страницу';
+
+            btnReload.addEventListener('click', () => {
+              document.location.reload();
+            });
+            root.prepend(btnReload);
+          });
+        }
+      }
+    })
+
+  </script>
+</body>
+
+</html>
