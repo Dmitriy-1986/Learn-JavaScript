@@ -11,17 +11,26 @@
 <body>
  
   <script>
+    let body = document.querySelector('body');
+    
     let input = document.createElement('input');
     input.id = 'search';
     input.setAttribute('type', 'search');
-    let body = document.querySelector('body');
     body.appendChild(input);
 
+    /* перевод в верхний регистр текста*/
     function myBlurFunction() {
       input.value = input.value.toUpperCase();
-    }; 
-    
+    };   
     input.addEventListener("blur", myBlurFunction, true);
+    
+    /* Удаление пробелов при вводе текста*/
+    let search = document.getElementById('search');
+    function keyUp() {
+         search.value=this.value.replace(/\s+/gi,'');
+     }
+     search.addEventListener('keyup', keyUp);
+    
   </script>
   
 </body>
