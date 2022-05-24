@@ -48,7 +48,8 @@ https://dmitriy-1986.github.io/repo-name-1/titleCopyElParagraph.html  | <a href=
 
 https://dmitriy-1986.github.io/repo-name-1/click-load-new-page.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/click-load-new-page.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/repo-name-1/input-text-upper-case.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/input-text-upper-case.html ">Code</a>
+
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
