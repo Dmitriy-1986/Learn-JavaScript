@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+ 
+  <script>
+    let input = document.createElement('input');
+    input.id = 'search';
+    input.setAttribute('type', 'search');
+    let body = document.querySelector('body');
+    body.appendChild(input);
+
+    function myBlurFunction() {
+      input.value = input.value.toUpperCase();
+    }; 
+    
+    input.addEventListener("blur", myBlurFunction, true);
+  </script>
+  
+</body>
+
+</html>
+
+
