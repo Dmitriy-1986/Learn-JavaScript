@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+    const root = document.getElementById('root');
+
+    //большая буква зарезервирована за классом - 
+    //отдельный файл User.js
+    class User {
+      constructor(username, password) {
+        this.username = `<i>Username: </i><b>${username}</b>`;
+        this.password = `<i>Password: </i><b>${password}</b><br><br>`;
+      }
+      validatePassword() {
+        if(this.password.length > 6 ) {
+          return true
+        } else {
+          return false
+        }
+      }
+    }
+
+    function objCycle(obj) {
+      for (key in obj) {
+        root.innerHTML += obj[key] + '<br>';
+      }
+    };
+
+    const person = new User('Dima', 'i123');
+    const admin = new User('Admin', 'Aq4jZRHcewWqhV5rhBwR');
+
+    objCycle(person);
+    objCycle(admin);
+    console.log(person.validatePassword());
+    console.log(admin.validatePassword());
+
+    //Расширение класса User
+    class Students extends User {
+      constructor(username, password, nickname) {
+        super(username, password);
+        this.nickname = `<i>Nickname: </i><b>${nickname}</b><hr>`;
+      }
+    }
+
+    let firstStudent = new Students('a', '123', 'nickname' );
+    objCycle(firstStudent);
+
+
+  </script>
+</body>
+
+</html>
