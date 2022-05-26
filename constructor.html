@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+    const root = document.getElementById('root');
+    root.innerHTML = '<h1>Class in JS</h1>';
+    root.innerHTML += '<hr>';
+
+    class User {
+      constructor(username, password) {
+        this.username = `<i>Username: </i><b>${username}</b><br>`;
+        this.password = `<i>Password: </i><b>${password}</b><br><br>`;
+      }
+    }
+
+    function objCycle(obj) {
+      for (key in obj) {
+        root.innerHTML += obj[key];
+      }
+    };
+
+    const person = new User('Dima', 'qwerty123');
+    const admin = new User('Admin', 'Aq4jZRHcewWqhV5rhBwR');
+    
+    objCycle(person);
+    objCycle(admin);
+
+
+  </script>
+</body>
+
+</html>
