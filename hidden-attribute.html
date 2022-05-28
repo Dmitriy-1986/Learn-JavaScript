@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+
+    const root = document.getElementById('root')
+    root.textContent = 'root hidden false if onclick - root hidden true';
+    root.hidden = false;
+    root.addEventListener('click', () => {
+      root.hidden = true;
+
+      const body = document.querySelector('body');
+      let mark = document.createElement('mark');
+      mark.textContent = 'root hidden true!';
+      body.appendChild(mark);
+    })
+
+  </script>
+</body>
+
+</html>
