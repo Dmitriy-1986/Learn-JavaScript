@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script>
+    const regex = [
+      { reg: '. (точка) - любой символ;' },
+      { reg: '[] - любой из них (диапазон);' },
+      { reg: '$ - конец строки;' },
+      { reg: '^ - любой символ;' },
+      { reg: '[^ ] - отрицание;' },
+      { reg: '\ - экранирование;' },
+      { reg: '\d - любая цифра;' },
+      { reg: '\D - все кроме цифр;' },
+      { reg: '\s - пробелы;' },
+      { reg: '\S - все кроме пробелов;' },
+      { reg: '\w - буква;' },
+      { reg: '\W - все кроме букв;' },
+      { reg: '\ b - граница слова;' },
+      { reg: '\B - не граница слова;' },
+      { reg: 'js{3} - js искать 3 раза;' },
+      { reg: 'js{3, 6} - js искать от 3 до 6;' },
+      { reg: '* - от нуля и выше;' },
+      { reg: '+ - любой символ;' },
+      { reg: '? - нуль или 1 раз;' },
+    ];
+
+    const root = document.getElementById('root');
+    root.innerHTML = `<h1>RegExp</h1>`;
+    let ul = document.createElement('ul');
+    root.appendChild(ul);
+    regex.forEach((e) => {
+      let li = document.createElement('li');
+      li.innerText = e.reg;
+      ul.appendChild(li);
+    });
+
+  </script>
+</body>
+
+</html>
