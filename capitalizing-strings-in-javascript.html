@@ -15,7 +15,7 @@
     let text = 'lorem ipsum dolor sit, amet consectetur adipisicing elit. dicta, iure nihil.';
     const root = document.getElementById('root');
     root.textContent = text.toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
-    root.textContent += '\n' + text.toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^/, (c) => c.toUpperCase())));
+    root.textContent += '\n' + text.toLowerCase().replace(/\w\S*/g, (w) => (w.replace(/^./, (c) => c.toUpperCase())));
   </script>
 </body>
 
