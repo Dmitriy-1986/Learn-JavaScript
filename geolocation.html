@@ -31,13 +31,13 @@
       }
 
       function error() {
-        status.textContent = 'Unable to retrieve your location';
+        status.textContent = 'Не удалось получить ваше местоположение';
       }
 
       if (!navigator.geolocation) {
-        status.textContent = 'Geolocation is not supported by your browser';
+        status.textContent = 'Геолокация не поддерживается вашим браузером';
       } else {
-        status.textContent = 'Locating…';
+        status.textContent = 'Расположение…';
         navigator.geolocation.getCurrentPosition(success, error);
       }
 
