@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="root">
+        <a href="https://orientation.pp.ua/"></a>
+        <a href="https://orientation.pp.ua/"></a>
+        <a href="https://orientation.pp.ua/"></a>
+        <a href="https://orientation.pp.ua/"></a>
+        <a href="https://orientation.pp.ua/"></a>
+        <a href="https://orientation.pp.ua/"></a>
+        <a href="https://orientation.pp.ua/"></a>
+        <a href="https://orientation.pp.ua/"></a>
+        <a href="https://orientation.pp.ua/"></a>
+        <a href="https://orientation.pp.ua/"></a>
+    </div>
+
+    <script>
+        const links = document.links;
+        for (var i = 0; i < links.length; i++) {
+            var linkHref = document.createTextNode(links[i].href);
+            var lineBreak = document.createElement("br");
+            document.body.appendChild(linkHref);
+            document.body.appendChild(lineBreak);
+            console.log(linkHref);
+        } 
+        
+    </script>
+</body>
+
+</html>
