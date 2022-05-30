@@ -74,7 +74,8 @@ https://dmitriy-1986.github.io/repo-name-1/navigator-onLine.html  | <a href="htt
 
 https://dmitriy-1986.github.io/repo-name-1/all-links-document.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/all-links-document.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/repo-name-1/search-in-str-regexp.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/search-in-str-regexp.html ">Code</a>
+
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
