@@ -13,12 +13,12 @@
       width: 100%;
     }
 
-    td,
-    th {
+    td, th {
       border: 1px solid #dddddd;
       text-align: left;
       padding: 8px;
       word-wrap: break-word;
+      text-transform: capitalize;
     }
 
     tr:nth-child(even) {
@@ -29,15 +29,11 @@
 
 <body>
 
-  <!-- Получаем игроков из файла JSON -->
   <h2>Получаем игроков из файла JSON</h2>
   <div>
     <table id="players">
       <tr>
-        <th>lastname</th>
-        <th>firstname</th>
-        <th>team</th>
-        <th>citizen</th>
+        <th>lastname</th> <th>firstname</th> <th>team</th> <th>citizen</th>
       </tr>
     </table>
   </div>
