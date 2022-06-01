@@ -86,7 +86,8 @@ https://dmitriy-1986.github.io/repo-name-1/xhr.js  | <a href="https://github.com
 
 https://dmitriy-1986.github.io/repo-name-1/players.json  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/players.json ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/repo-name-1/extract-data-from-json.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/extract-data-from-json.html ">Code</a> 
+
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
