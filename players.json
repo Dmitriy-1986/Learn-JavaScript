@@ -1,0 +1,9 @@
+{
+  "players":
+  [
+    {"lastname": "Messi", "firstname": "Lionel", "team": "Barcelona", "citizen": "Argentina"},
+    {"lastname": "Ronaldo", "firstname": "Cristiano", "team": "Portugal", "citizen": "Portugal"},
+    {"lastname": "Neymar da Silva", "firstname": "Santos", "team": "Paris Saint Germain", "citizen": "Brazil"},
+    {"lastname": "Kylian Mbappe", "firstname": "Lottin", "team": "Paris Saint Germain", "citizen": "France"}
+  ]
+}
