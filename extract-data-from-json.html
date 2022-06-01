@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="./json-icon.png" type="image/png">
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Получаем игроков из файла JSON -->
+  <h2>Получаем игроков из файла JSON</h2>
+  <div>
+    <table id="players">
+      <tr>
+        <th>lastname</th>
+        <th>firstname</th>
+        <th>team</th>
+        <th>citizen</th>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    const players = document.getElementById('players');
+    let requestURL = 'players.json';
+    let request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function () {
+      let superPlayers = request.response;
+      listSuperPlayers(superPlayers);
+    }
+
+    function listSuperPlayers(jsonObj) {
+
+
+      let playersVar = jsonObj.players;
+
+      for (let i = 0; i < playersVar.length; i++) {
+        let tr = document.createElement('tr');
+        players.appendChild(tr);
+        tr.innerHTML = `<td>${playersVar[i].lastname}</td>
+                        <td>${playersVar[i].firstname}</td>
+                        <td>${playersVar[i].team}</td>
+                        <td>${playersVar[i].citizen}</td>`;
+      }
+
+    }
+  </script>
+</body>
+
+</html>
