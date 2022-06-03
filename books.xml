@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+  <book>
+    <name>JS для детей</name>
+    <type>программирование JS</type>
+    <author>Ник Морган</author>
+  </book>
+  <book>
+    <name>JS для профессиональных веб-разработчиков</name>
+    <type>программирование JS</type>
+    <author>Мэтт Фрисби</author>
+  </book>
+  <book>
+    <name>JS на примерах</name>
+    <type>программирование JS</type>
+    <author>Никольский А.П.</author>
+  </book>
+  <book>
+    <name>JS карманный справочник</name>
+    <type>программирование JS</type>
+    <author>Дэвид Флэнаган</author>
+  </book>
+</books>
