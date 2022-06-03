@@ -92,7 +92,8 @@ https://dmitriy-1986.github.io/repo-name-1/schedule.json  | <a href="https://git
 
 https://dmitriy-1986.github.io/repo-name-1/books.xml  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/books.xml ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/repo-name-1/xml-parser.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/xml-parser.html ">Code</a>
+
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
