@@ -96,7 +96,8 @@ https://dmitriy-1986.github.io/repo-name-1/xml-parser.html  | <a href="https://g
 
 https://dmitriy-1986.github.io/repo-name-1/clock-two.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/clock-two.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/repo-name-1/localstorage.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/localstorage.html ">Code</a> 
+
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
