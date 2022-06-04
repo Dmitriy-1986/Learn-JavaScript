@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #menu {
+      width: 250px;
+      min-height: 100vh;
+      background: black;
+      color: white;
+      position: fixed;
+      left: -230px;
+      top: 0;
+      transition: all ease 1s;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+  </div>
+  <script>
+    window.onload = function() {
+
+      document.querySelector('#menu').onmouseover = menuShow;
+      document.querySelector('#menu').onmouseout = menuHide;
+
+      function menuShow() {
+        document.querySelector('#menu').style.left = 0;
+
+      }
+
+      function menuHide() {
+        document.querySelector('#menu').style.left = '-230px';
+      }
+    }
+  </script>
+</body>
+</html>
