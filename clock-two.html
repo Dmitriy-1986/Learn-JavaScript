@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    .date {
+      color: blue;
+      text-decoration-line: underline;
+    }
+
+    .text-date {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <h1></h1>
+    <p></p>
+  </div>
+
+  <script>
+
+    let root = document.getElementById('root');
+    let h1 = document.querySelector('h1');
+    let p1 = document.querySelector('p');
+
+    function clockAndDate() {
+      const date = new Date();
+      let time = date.toLocaleTimeString();
+      let hour = date.getHours();
+      let year = date.getFullYear();
+
+      let month = date.getMonth() + 1;
+      if (month < 10) {
+        month = '0' + month;
+      }
+
+      const weekday = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+      let day = weekday[date.getDay()];
+
+      let dayMonth = date.getDate();
+      if (dayMonth < 10) {
+        dayMonth = '0' + dayMonth;
+      }
+
+      p1.innerHTML = '<i class="text-date">Сегодня:</i> <span class="date">' + day + ' ' + dayMonth + '.' + month + '.' + year + ' - ' + time + '</span>';
+      
+      // определим фразу приветствия в зависимости от местного времени пользователя 
+      if (hour <= 6) {
+        h1.innerText = 'Доброй ночи!'.toUpperCase();
+      } else if (hour <= 10) {
+        h1.innerText = 'Доброе утро!'.toUpperCase();
+      } else if (hour <= 18) {
+        h1.innerText = 'Добрый день!'.toUpperCase();
+      } else {
+        h1.innerText = 'Добрый вечер!'.toUpperCase();
+      }
+    }
+    setInterval(clockAndDate, 1000);
+
+  </script>
+</body>
+
+</html>
