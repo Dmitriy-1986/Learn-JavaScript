@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #root {
+      display: grid;
+      grid-template-columns: 1fr .5fr;
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 50%;
+      min-height: 100vh;
+    }
+
+    @media screen and (max-width: 700px) {
+      #root {
+        width: 90%;
+      }
+    }
+
+    .in,
+    button {
+      width: 90%;
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="block">
+      <p>
+        <input type="text" id="chief" class="in" value="Михайловська">
+      </p>
+      <p>
+        <input type="text" id="deputyChief" class="in" value="Григор'єв">
+      </p>
+      <p>
+        <input type="text" id="codeUPP" class="in" value="13852301">
+      </p>
+      <p>
+        <input type="text" id="codeTom" class="in" value="41/32-02">
+      </p>
+    </div>
+
+    <div class="block">
+      <p>
+        <button id="btnChief">Михайловська</button>
+      </p>
+      <p>
+        <button id="btnDeputyChief">Григор'єв</button>
+      </p>
+      <p>
+        <button id="btnCodeUPP">13852301</button>
+      </p>
+      <p>
+        <button id="btnCodeTom">41/32-02</button>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    let btnChief, btnDeputyChief, btnCodeUPP, btnCodeTom;
+
+    btnChief = document.getElementById('btnChief');
+    btnDeputyChief = document.getElementById('btnDeputyChief');
+    btnCodeUPP = document.getElementById('btnCodeUPP');
+    btnCodeTom = document.getElementById('btnCodeTom');
+
+    btnChief.addEventListener('click', () => {
+      let chief = document.getElementById('chief');
+      chief.select();
+      document.execCommand("copy");
+    });
+
+    btnDeputyChief.addEventListener('click', () => {
+      let deputyChief = document.getElementById('deputyChief');
+      deputyChief.select();
+      document.execCommand("copy");
+    });
+
+    btnCodeUPP.addEventListener('click', () => {
+      let codeUPP = document.getElementById('codeUPP');
+      codeUPP.select();
+      document.execCommand("copy");
+    });
+
+    btnCodeTom.addEventListener('click', () => {
+      let codeTom = document.getElementById('codeTom');
+      codeTom.select();
+      document.execCommand("copy");
+    })
+
+  </script>
+</body>
+
+</html>
