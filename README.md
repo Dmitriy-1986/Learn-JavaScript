@@ -104,7 +104,8 @@ https://dmitriy-1986.github.io/repo-name-1/menu-js.html  | <a href="https://gith
 
 https://dmitriy-1986.github.io/repo-name-1/tabs.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/tabs.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/repo-name-1/sort-array.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/sort-array.html ">Code</a>
+
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
