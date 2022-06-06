@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ЄО</title>
   <style>
     * {
       box-sizing: border-box;
@@ -22,7 +22,7 @@
       margin: 0 auto;
       margin-top: 50px;
       width: 50%;
-      min-height: 100vh;
+      min-height: calc(100vh - 50px);
     }
 
     @media screen and (max-width: 700px) {
@@ -49,7 +49,13 @@
         <input type="text" id="chief" class="in" value="Михайловська">
       </p>
       <p>
-        <input type="text" id="deputyChief" class="in" value="Григор'єв">
+        <input type="text" id="deputyChief" class="in" value="Куліш">
+      </p>
+      <p>
+        <input type="text" id="deputyChiefVMAZ" class="in" value="Григор'єв">
+      </p>
+      <p>
+        <input type="text" id="chiefVROMDTP" class="in" value="Алдошин">
       </p>
       <p>
         <input type="text" id="codeUPP" class="in" value="13852301">
@@ -64,7 +70,13 @@
         <button id="btnChief">Михайловська</button>
       </p>
       <p>
-        <button id="btnDeputyChief">Григор'єв</button>
+        <button id="btnDeputyChief">Куліш</button>
+      </p>
+      <p>
+        <button id="btnDeputyChiefVMAZ">Григор'єв</button>
+      </p>
+      <p>
+        <button id="btnChiefVROMDTP">Алдошин</button>
       </p>
       <p>
         <button id="btnCodeUPP">13852301</button>
@@ -76,22 +88,55 @@
   </div>
 
   <script>
-    let btnChief, btnDeputyChief, btnCodeUPP, btnCodeTom;
+    window.onload = function () {
+      let myFunction = function (btn, input) {
+        let b = document.getElementById(btn);
+        let i = document.getElementById(input);
 
-    btnChief = document.getElementById('btnChief');
-    btnDeputyChief = document.getElementById('btnDeputyChief');
-    btnCodeUPP = document.getElementById('btnCodeUPP');
-    btnCodeTom = document.getElementById('btnCodeTom');
+        b.addEventListener('click', () => {
+          i.select();
+          document.execCommand("copy");
+        });
+      };
+
+      myFunction('btnChief', 'chief');
+      myFunction('btnDeputyChief', 'deputyChief');
+      myFunction('btnDeputyChiefVMAZ', 'deputyChiefVMAZ');
+      myFunction('btnChiefVROMDTP', 'chiefVROMDTP');
+      myFunction('btnCodeUPP', 'codeUPP');
+      myFunction('btnCodeTom', 'codeTom');
+    };
+
+    /* Old Code */
+    /*   let btnChief, btnDeputyChief, btnDeputyChiefVMAZ, btnVROMDTP, btnCodeUPP, btnCodeTom;
+  
+      btnChief = document.getElementById('btnChief');
+      btnDeputyChief = document.getElementById('btnDeputyChief');
+      btnDeputyChiefVMAZ = document.getElementById('btnDeputyChiefVMAZ');
+      btnCodeUPP = document.getElementById('btnCodeUPP');
+      btnCodeTom = document.getElementById('btnCodeTom');
 
     btnChief.addEventListener('click', () => {
       let chief = document.getElementById('chief');
       chief.select();
       document.execCommand("copy");
-    });
+    }); 
 
     btnDeputyChief.addEventListener('click', () => {
-      let deputyChief = document.getElementById('deputyChief');
-      deputyChief.select();
+      let deputyChiefTwo = document.getElementById('deputyChief');
+      deputyChiefTwo.select();
+      document.execCommand("copy");
+    });
+
+    btnDeputyChiefVMAZ.addEventListener('click', () => {
+      let deputyChiefVMAZ = document.getElementById('deputyChiefVMAZ');
+      deputyChiefVMAZ.select();
+      document.execCommand("copy");
+    });
+
+    btnChiefVROMDTP.addEventListener('click', () => {
+      let VROMDTP = document.getElementById('chiefVROMDTP');
+      VROMDTP.select();
       document.execCommand("copy");
     });
 
@@ -105,7 +150,7 @@
       let codeTom = document.getElementById('codeTom');
       codeTom.select();
       document.execCommand("copy");
-    })
+    })*/
 
   </script>
 </body>
