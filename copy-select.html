@@ -89,7 +89,8 @@
 
   <script>
     window.onload = function () {
-      let myFunction = function (btn, input) {
+
+      let copySelect = function (btn, input) {
         let b = document.getElementById(btn);
         let i = document.getElementById(input);
 
@@ -99,12 +100,13 @@
         });
       };
 
-      myFunction('btnChief', 'chief');
-      myFunction('btnDeputyChief', 'deputyChief');
-      myFunction('btnDeputyChiefVMAZ', 'deputyChiefVMAZ');
-      myFunction('btnChiefVROMDTP', 'chiefVROMDTP');
-      myFunction('btnCodeUPP', 'codeUPP');
-      myFunction('btnCodeTom', 'codeTom');
+      copySelect('btnChief', 'chief');
+      copySelect('btnDeputyChief', 'deputyChief');
+      copySelect('btnDeputyChiefVMAZ', 'deputyChiefVMAZ');
+      copySelect('btnChiefVROMDTP', 'chiefVROMDTP');
+      copySelect('btnCodeUPP', 'codeUPP');
+      copySelect('btnCodeTom', 'codeTom');
+      
     };
 
     /* Old Code */
