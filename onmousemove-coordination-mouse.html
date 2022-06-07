@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #root {
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      margin: 20px auto;
+    }
+
+    #offx,
+    #offy {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="root"></div>
+  <p>Координата Х: <span id="offx">0</span><br> Координата Y: <span id="offy">0</span></p>
+
+  <script>
+    const root = document.getElementById('root');
+
+    root.onmousemove = function (event) {
+      event = event || window.event;
+      //console.log(event);
+
+      document.querySelector('#offx').innerHTML = event.offsetX;
+      document.querySelector('#offy').innerHTML = event.offsetY;
+
+    }
+
+  </script>
+
+</body>
+
+</html>
