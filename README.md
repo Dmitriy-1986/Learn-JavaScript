@@ -112,7 +112,8 @@ https://dmitriy-1986.github.io/repo-name-1/copy-select.html  | <a href="https://
 
 https://dmitriy-1986.github.io/repo-name-1/onmousemove-coordination-mouse.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/onmousemove-coordination-mouse.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/repo-name-1/progress-time-interval.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/progress-time-interval.html ">Code</a>
+
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
