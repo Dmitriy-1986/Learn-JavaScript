@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="nadbavka">
+  <button id="calc">Submit</button>
+  <p id="result">Результат</p>
+  <script>
+    let calc = document.getElementById('calc').onclick = () => {
+      let y = document.getElementById('nadbavka').value;
+      y = parseInt(y); //принимаю строку а возвращаю число!
+      let result = document.getElementById('result');
+      if (y >= 0 && y < 3) {
+        result.innerHTML = '0%';
+      } else if (y >= 3 && y < 10) {
+        result.innerHTML = '10%';
+      } else if (y >= 10 && y < 20) {
+        result.innerHTML = '20%';
+      } else if (y >= 20) {
+        result.innerHTML = '25%';
+      } else {
+        result.innerHTML = 'Ошибка!';
+      }
+    }
+  </script>
+</body>
+
+</html>
