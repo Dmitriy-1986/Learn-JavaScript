@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: 1px solid grey;
+      width: 260px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-left: 5px;
+      padding: 3px;
+    }
+
+    .close {
+      cursor: pointer;
+      text-decoration: underline;
+      color: blue;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block">
+    <input type="color" id="one">
+    <button id="btnBackColor">Обрати колір фону</button>
+    <span id="close" class="close">Сховати</span>
+  </div>
+
+
+  <script>
+    document.querySelector('#btnBackColor').onclick = function () {
+      let y = document.querySelector('#one').value;
+      console.log(y);
+      document.querySelector('body').style.backgroundColor = y;
+
+    }
+
+    document.querySelector('#close').onclick = function() {
+      document.querySelector('.block').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
