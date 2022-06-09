@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Увеличить размер шрифта</h1>
+  <input type="range" id="rangeFontSize" min="0" max="50">
+
+  <p id="par">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quia sunt numquam possimus temporibus dolorum,
+    veritatis dignissimos. Vel exercitationem in, non vero qui eos beatae dignissimos maiores quaerat dolorum facilis.
+    Corporis quos rerum, ipsa aliquam earum laudantium dignissimos harum deleniti nesciunt cum consequatur consectetur
+    accusantium velit, expedita eaque eum laboriosam!
+  </p>
+
+  <script>
+    let par = document.querySelector('#par');
+    document.querySelector('#rangeFontSize').oninput = () => {
+      let v = document.getElementById('rangeFontSize').value + 'px';
+      par.style.fontSize = v;
+    }
+
+  </script>
+</body>
+
+</html>
