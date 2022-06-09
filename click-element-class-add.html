@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>400</title>
+  <style>
+    img {
+      height: 100px;
+    }
+
+    .bordered {
+      border: 2px solid black;
+      box-shadow: 0 0 10px black;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/dovgal-project.appspot.com/o/apricot-shop.jpg?alt=media&token=5883669f-bd1b-4f36-a34c-7c31d22c4fbb"
+    alt="help img">
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/dovgal-project.appspot.com/o/lemon-shop.jpg?alt=media&token=7d2008fa-6acf-4c2c-98cb-44c646d163c3"
+    alt="help img">
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/dovgal-project.appspot.com/o/pineapple-shop.jpg?alt=media&token=605585b5-69de-4fcc-bbbc-0a22bda235f7"
+    alt="help img">
+
+  <div class="block">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, saepe!</p>
+  </div>
+
+  <script>
+    document.onclick = function (event) {
+      event = event || window.event;
+      //если кликнуть по картинке она будет в рамке
+      if (event.target.tagName == 'IMG') {
+        event.target.classList.add('bordered');
+      }
+      //если кликнуть по тегу он будет в рамке
+      /* if (event.target.tagName) {
+        event.target.classList.add('bordered');
+      } */
+    }
+
+  </script>
+
+</body>
+
+</html>
