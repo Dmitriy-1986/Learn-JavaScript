@@ -124,7 +124,8 @@ https://dmitriy-1986.github.io/repo-name-1/click-element-class-add.html  | <a hr
 
 https://dmitriy-1986.github.io/repo-name-1/btn-back-color.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/btn-back-color.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/repo-name-1/range-value-font-size.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/range-value-font-size.html ">Code</a>
+
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
