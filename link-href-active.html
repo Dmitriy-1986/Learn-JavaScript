@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- если ссылки никуда не ведут их окрасить в другой цвет -->
+  <a href="#">1</a><br>
+  <a href="#">2</a><br>
+  <a href="#">3</a><br>
+  <a href="#">4</a><br>
+  <a href="https://dovgaldima.pp.ua">DovgalDima</a><br>
+
+  <script>
+    let h = document.getElementsByTagName('a');
+    for (let i = 0; i < h.length; i++) {
+      console.log(h[i].href);
+      if (h[i].getAttribute('href') == '#') {
+        h[i].style.color = 'red';
+      }
+    }
+  </script>
+</body>
+
+</html>
