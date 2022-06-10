@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЄО</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 50px;
+      color: #0d6efd;
+    }
+
+    #root {
+      display: grid;
+      grid-template-columns: 1fr .5fr;
+      margin: 0 auto;
+      width: 50%;
+      min-height: calc(100vh - 100px);
+    }
+
+    @media screen and (max-width: 700px) {
+      #root {
+        width: 90%;
+      }
+    }
+
+    .in,
+    button {
+      width: 90%;
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      padding: 5px;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 0.25rem;
+      border: 1px solid #ced4da;
+      word-wrap: break-word;
+    }
+
+    button {
+      color: #fff;
+      background-color: #198754;
+      border-color: #198754;
+    }
+
+    /* Блок настроек */
+    .settings {
+      margin: 10px;
+      max-width: 500px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid #ced4da;
+    }
+
+    .title {
+      display: inline-block;
+      padding: 10px;
+      width: 100%;
+      background-color: rgba(174, 171, 171, 0.648);
+    }
+
+    .title h3,
+    .close {
+      display: inline-block;
+    }
+
+    .title .close {
+      cursor: pointer;
+      text-decoration: underline;
+      float: right;
+      color: #ff6347;
+      font-weight: 600;
+      text-shadow: 0 1px 1px black;
+      transition: all ease 500ms;
+    }
+
+    .title .close:hover {
+      color: #ff6347b7;
+    }
+
+    .title h3 {
+      margin: 0;
+      color: #ffffff;
+      text-shadow: 0 1px 1px black;
+    }
+
+    .fonts,
+    .bgcolor {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .color-picker,
+    .range-font-size {
+      width: 50%;
+    }
+
+    .btn-color-picker {
+      display: inline-block;
+      color: black;
+      background-color: white;
+      border-color: white;
+      width: 156px;
+      padding: 5px;
+      line-height: 1.5;
+      text-align: center;
+      border-radius: 0.25rem;
+      border: 1px solid #ced4da;
+      word-wrap: break-word;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="settings" id="settings">
+    <div class="title">
+      <h3>Налаштування</h3>
+      <div class="close" id="close">Закрити</div>
+    </div>
+    <div class="fonts">
+      <label for="rangeFontSize">Розмір шрифта: <span id="size">16px</span></label>
+      <input type="range" id="rangeFontSize" class="range-font-size" min="0" max="50">
+    </div>
+
+    <div class="bgcolor">
+      <button id="btnColorPicker" class="btn-color-picker">Змінити колір фону</button>
+      <input type="color" id="colorPicker" class="color-picker" value="#ffffff">
+    </div>
+  </div>
+
+  <h2>Копіювання тексту</h2>
+  <div id="root">
+
+    <div class="block">
+      <p>
+        <input type="text" id="chief" class="in font-size" value="МИХАЙЛОВСЬКА С.В">
+      </p>
+      <p>
+        <input type="text" id="deputyChief" class="in font-size" value="КУЛІШ К.М.">
+      </p>
+      <p>
+        <input type="text" id="deputyChiefVMAZ" class="in font-size" value="ГРИГОР'ЄВ С.В.">
+      </p>
+      <p>
+        <input type="text" id="chiefVROMDTP" class="in font-size" value="АЛДОШИН Д.А.">
+      </p>
+      <p>
+        <input type="text" id="codeUPP" class="in font-size" value="13852301">
+      </p>
+      <p>
+        <input type="text" id="codeTom" class="in font-size" value="41/32-02">
+      </p>
+    </div>
+
+    <div class="block">
+      <p>
+        <button id="btnChief" class="font-size">МИХАЙЛОВСЬКА С.В</button>
+      </p>
+      <p>
+        <button id="btnDeputyChief" class="font-size">КУЛІШ К.М.</button>
+      </p>
+      <p>
+        <button id="btnDeputyChiefVMAZ" class="font-size">ГРИГОР'ЄВ С.В.</button>
+      </p>
+      <p>
+        <button id="btnChiefVROMDTP" class="font-size">АЛДОШИН Д.А.</button>
+      </p>
+      <p>
+        <button id="btnCodeUPP" class="font-size">13852301</button>
+      </p>
+      <p>
+        <button id="btnCodeTom" class="font-size">41/32-02</button>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    window.onload = function () {
+      /* Блок копирования текста */
+      let copySelect = function (btn, input) {
+        let b = document.getElementById(btn);
+        let i = document.getElementById(input);
+
+        b.addEventListener('click', () => {
+          i.select();
+          document.execCommand("copy");
+        });
+      };
+
+      copySelect('btnChief', 'chief');
+      copySelect('btnDeputyChief', 'deputyChief');
+      copySelect('btnDeputyChiefVMAZ', 'deputyChiefVMAZ');
+      copySelect('btnChiefVROMDTP', 'chiefVROMDTP');
+      copySelect('btnCodeUPP', 'codeUPP');
+      copySelect('btnCodeTom', 'codeTom');
+
+      /* Блок настроек
+      *  Скрыть блок 
+      */
+      let settings = document.getElementById('settings');
+      let close = document.getElementById('close');
+      close.onclick = function () {
+        settings.style.display = 'none';
+      }
+
+      /* Розмер шрифта */
+      let font = document.getElementsByClassName('font-size');
+      document.querySelector('#rangeFontSize').oninput = () => {
+        for (let i = 0; i < font.length; i++) {
+          let size = document.getElementById('size');
+          let v = document.getElementById('rangeFontSize').value + 'px';
+          font[i].style.fontSize = v;
+          size.innerHTML = v;
+        };
+      }
+
+      /* Цвет фона */
+      document.querySelector('#btnColorPicker').onclick = function () {
+        let y = document.querySelector('#colorPicker').value;
+        document.querySelector('body').style.backgroundColor = y;
+      }
+    };
+  </script>
+</body>
+
+</html>
