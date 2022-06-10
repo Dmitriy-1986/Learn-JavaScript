@@ -126,11 +126,18 @@
       word-wrap: break-word;
       margin: 0;
     }
+
+    .settings-open {
+      display: none;padding: 10px;
+      cursor: pointer;
+      text-decoration: underline;
+      color: #0d6efd;
+    }
   </style>
 </head>
 
 <body>
-
+  <div id="settingsOpen" class="settings-open">Відкрити налаштування</div>
   <div class="settings" id="settings">
     <div class="title">
       <h3>Налаштування</h3>
@@ -138,7 +145,7 @@
     </div>
     <div class="fonts">
       <label for="rangeFontSize">Розмір шрифта: <span id="size">16px</span></label>
-      <input type="range" id="rangeFontSize" class="range-font-size" min="0" max="50">
+      <input type="range" id="rangeFontSize" class="range-font-size" min="0" max="32">
     </div>
 
     <div class="bgcolor">
@@ -220,8 +227,14 @@
       let close = document.getElementById('close');
       close.onclick = function () {
         settings.style.display = 'none';
+        settingsOpen.style.display = 'block';
       }
-
+      /* Открыть настройки */
+      let settingsOpen = document.getElementById('settingsOpen');
+      settingsOpen.onclick = function () {
+        settings.style.display = 'block';
+        settingsOpen.style.display = 'none';
+      }
       /* Розмер шрифта */
       let font = document.getElementsByClassName('font-size');
       document.querySelector('#rangeFontSize').oninput = () => {
@@ -239,6 +252,7 @@
         document.querySelector('body').style.backgroundColor = y;
       }
     };
+
   </script>
 </body>
 
