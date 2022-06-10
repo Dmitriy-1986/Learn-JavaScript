@@ -126,7 +126,8 @@ https://dmitriy-1986.github.io/repo-name-1/btn-back-color.html  | <a href="https
 
 https://dmitriy-1986.github.io/repo-name-1/range-value-font-size.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/range-value-font-size.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/repo-name-1/opacity-backround.html  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/opacity-backround.html ">Code</a>
+
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
 <!-- https://dmitriy-1986.github.io/repo-name-1/  | <a href="https://github.com/Dmitriy-1986/repo-name-1/blob/master/ ">Code</a> -->
