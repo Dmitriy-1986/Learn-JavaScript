@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font: 1em sans-serif;
+      padding: 0;
+      width: 100%;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    .form {
+      display: grid;
+      grid-template-columns: 1fr .5fr;
+      margin: 20px auto;
+      max-width: 500px;
+    }
+
+    .form-bloks {
+      padding: 5px;
+    }
+
+    .email-block {
+      margin: 0;
+    }
+
+    p * {
+      display: block;
+      margin: 0;
+    }
+
+    input[type=email] {
+      appearance: none;
+      width: 100%;
+      margin: 0;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    input[type=email]:focus {
+      color: #212529;
+      background-color: #fff;
+      border-color: #86b7fe;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    }
+
+    .btn {
+      display: block;
+      padding: 5px;
+      width: 100%;
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      text-decoration: none;
+      border: 1px solid transparent;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    .btn:hover {
+      color: #fff;
+      background-color: #0b5ed7;
+      border-color: #0a58ca;
+    }
+
+    /* Это стили для не валидных полей */
+    /* input:invalid {
+      border-color: #900;
+      background-color: #FDD;
+    } */
+
+    input:focus:invalid {
+      outline: none;
+    }
+
+    /* Это стили для кастомных сообщений об ошибке */
+    .error {
+      width: 100%;
+      padding: 0;
+      font-size: 80%;
+      color: #842029;
+      background-color: #f8d7da;
+      border-color: #f5c2c7;
+      box-sizing: border-box;
+      margin-top: .5rem;
+      border-radius: 0.25rem;
+    }
+
+    .error.active {
+      padding: .5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Пожалуйста, введите свой адрес электронной почты:</h3>
+  <form novalidate class="form">
+    <div class="form-bloks">
+      <p class="email-block">
+        <label for="mail">
+          <input type="email" id="mail" name="mail" required minlength="8">
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
+    </div>
+
+    <div class="form-bloks">
+      <button class="btn">Отправить</button>
+    </div>
+
+  </form>
+
+  <script>
+    // Существуют разные способы получить DOM-узел; здесь мы определяем саму форму и
+    // поле ввода email и элемент span, в который поместим сообщение об ошибке
+    const form = document.getElementsByTagName('form')[0];
+
+    const email = document.getElementById('mail');
+    const emailError = document.querySelector('#mail + span.error');
+
+    email.addEventListener('input', function (event) {
+      // Каждый раз, когда пользователь что-то вводит,
+      // мы проверяем, являются ли поля формы валидными
+
+      if (email.validity.valid) {
+        // Если на момент валидации какое-то сообщение об ошибке уже отображается,
+        // если поле валидно, удаляем сообщение
+        emailError.textContent = ''; // Сбросить содержимое сообщения
+        emailError.className = 'error'; // Сбросить визуальное состояние сообщения
+      } else {
+        // Если поле не валидно, показываем правильную ошибку
+        showError();
+      }
+    });
+
+    form.addEventListener('submit', function (event) {
+      // Если поле email валдно, позволяем форме отправляться
+
+      if (!email.validity.valid) {
+        // Если поле email не валидно, отображаем соответствующее сообщение об ошибке
+        showError();
+        // Затем предотвращаем стандартное событие отправки формы
+        event.preventDefault();
+      }
+    });
+
+    function showError() {
+      if (email.validity.valueMissing) {
+        // Если поле пустое,
+        // отображаем следующее сообщение об ошибке
+        emailError.textContent = 'Вам необходимо ввести адрес электронной почты!';
+      } else if (email.validity.typeMismatch) {
+        // Если поле содержит не email-адрес,
+        // отображаем следующее сообщение об ошибке
+        emailError.textContent = 'Введенное значение должно быть адресом электронной почты!';
+      } else if (email.validity.tooShort) {
+        // Если содержимое слишком короткое,
+        // отображаем следующее сообщение об ошибке
+        emailError.textContent = `Электронная почта должна быть не менее ${email.minLength} символов, а Вы ввели ${email.value.length}!`;
+      }
+
+      // Задаём соответствующую стилизацию
+      emailError.className = 'error active';
+    }
+  </script>
+</body>
+
+</html>
