@@ -138,7 +138,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/count-plus-plus.html  | <a href=
 
 https://dmitriy-1986.github.io/Learn-JavaScript/validation-email-form.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/validation-email-form.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/reverse-string.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/reverse-string.html ">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
