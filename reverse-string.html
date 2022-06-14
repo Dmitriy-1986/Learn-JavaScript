@@ -1,1 +1,32 @@
-<! -- -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="root">
+      <h2> Reverse string</h2>
+      <pre></pre>
+    </div>
+
+    <script>
+        let a = "foo";
+
+        c = a.split('').reverse().join().replace(/[\s,]/g, ''); 
+
+        console.log(c);
+      
+        let pre = document.querySelector('pre');
+            pre.innerHTML = a;
+            pre.innerHTML += c;
+
+    </script>
+</body>
+
+</html>
