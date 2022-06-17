@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    let helloWorld = 'Hello world!';
+
+    const XHTTP = new XMLHttpRequest();
+    XHTTP.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        myFunction(this.responseText);
+      }
+    }
+    //CORS - система безопасности который запрещает и блокируют эти запросы
+    XHTTP.open('GET', 'https://dmitriy-1986.github.io/Learn-JavaScript/hello-world.html', true); 
+                      //http://getpost.itgid.info/index2.php 
+    XHTTP.send();
+    
+    function myFunction(data) {
+      console.log(data);
+    }
+
+  </script>
+</body>
+
+</html>
