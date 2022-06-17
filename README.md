@@ -142,7 +142,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/reverse-string.html  | <a href="
 
 https://dmitriy-1986.github.io/Learn-JavaScript/number-is-nan.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/number-is-nan.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/hello-world.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/hello-world.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
