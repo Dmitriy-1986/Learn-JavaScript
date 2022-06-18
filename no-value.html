@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #lorem::placeholder {
+      color: black;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <input type="text" value="LOREM IPSUM" id="lorem" placeholder="LOREM IPSUM" >
+  <button id="btn">Btn</button>
+
+  <br><br>
+
+  <input type="text" value="Disabled input" id="lorem" disabled>
+  <button id="btn" disabled>Btn disabled</button>
+
+  <script>
+
+    let lorem = document.getElementById('lorem');
+
+    function noValue() {
+      this.value = this.value.replace(/[\D+\d+]/g, '');
+    }; 
+
+    lorem.addEventListener('input', noValue);
+
+
+  </script>
+</body>
+
+</html>
