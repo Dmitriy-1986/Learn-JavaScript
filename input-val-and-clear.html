@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="in">
+  <button id="btn">Submit</button>
+  <button id="clr">Clear</button>
+
+  <div id="root"></div>
+
+  <script>
+    const root = document.getElementById('root');
+    const input = document.getElementById('in');
+    const btn = document.getElementById('btn');
+    const clr = document.getElementById('clr');
+
+    btn.onclick = function () {
+      let val = input.value;
+
+      myFunc(val);
+    };
+
+    function myFunc(a) {
+      a = a || 'Введите данные в поле ввода';
+      root.innerHTML = a;
+    }
+    myFunc();
+
+    clr.onclick = function () {
+      input.value = '';
+      myFunc();
+    }
+
+  </script>
+</body>
+
+</html>
