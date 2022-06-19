@@ -152,7 +152,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/no-value.html  | <a href="https:
 
 https://dmitriy-1986.github.io/Learn-JavaScript/input-val-and-clear.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/input-val-and-clear.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/try-catch-js.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/try-catch-js.html ">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
