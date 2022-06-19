@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #content {
+      width: 100%;
+    }
+
+    mark {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      font-family: monospace;
+      font-size: 16px;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content"></div>
+  <script>
+    try {
+      document.querySelector('.test').innerHTML = a; //блок программы который может дать ошибку!
+    } catch (e) {
+      let contentError = document.getElementById('content');
+      let mark = document.createElement('mark');
+          mark.innerHTML = `Внимание ошибка  ${e.name} в JavaScript коде!`;
+
+      contentError.appendChild(mark);
+    }
+  </script>
+</body>
+
+</html>
