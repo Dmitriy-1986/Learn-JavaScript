@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+ 
+
+    input {
+      margin: 0;
+    }
+
+    .button {
+      margin-left: 4px;
+    }
+
+    button {
+      width: 100px;
+    }
+  </style>
+
+  <!-- <link rel="stylesheet" href="https://dmitriy-1986.github.io/Learn-JavaScript/reset-input.css"> -->
+</head>
+
+<body>
+  <p>
+    <input type="text" id="inputVal" placeholder="Введите текст">
+    <button id="button">Добавить</button>
+    <hr>
+  </p>
+
+  <div id="block"></div>
+
+  <script>
+    let button = document.getElementById('button');
+    let inputVal = document.getElementById('inputVal');
+    let block = document.getElementById('block');
+
+    button.addEventListener('click', () => {
+      let val = inputVal.value;
+      let newInput = document.createElement('input');
+      newInput.setAttribute('type', 'text');
+      newInput.value = val;
+
+      let newBtn = document.createElement('button');
+      newBtn.classList.add('button');
+      newBtn.textContent = 'Копировать';
+
+      let p = document.createElement('p');
+      p.appendChild(newInput);
+      p.appendChild(newBtn);
+      block.appendChild(p);
+      inputVal.value = '';
+    })
+  </script>
+</body>
+
+</html>
