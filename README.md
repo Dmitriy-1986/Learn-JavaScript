@@ -160,7 +160,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/reset-input.css  | <a href="http
 
 https://dmitriy-1986.github.io/Learn-JavaScript/my-todo-list.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/my-todo-list.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/input-todo-created-delete-update.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/input-todo-created-delete-update.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
