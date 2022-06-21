@@ -69,7 +69,6 @@
     <div id="block"></div>
   </div>
 
-
   <script>
     let button = document.getElementById('button');
     let inputVal = document.getElementById('inputVal');
@@ -81,24 +80,12 @@
       newP.classList.add('new-p');
       newP.textContent = val;
 
-      let newBtn = document.createElement('button');
-      newBtn.classList.add('button');
-      newBtn.textContent = 'Копировать';
-
       let removeBtn = document.createElement('div');
       removeBtn.classList.add('button');
       removeBtn.classList.add('btn-remove');
       removeBtn.textContent = 'Удалить';
       removeBtn.addEventListener('click', () => {
         div.style.display = 'none';
-      });
-
-      let updateBtn = document.createElement('button');
-      updateBtn.classList.add('button');
-      updateBtn.textContent = 'Изменить';
-
-      updateBtn.addEventListener('focus', (event) => {
-        newInput.focus();
       });
 
       let div = document.createElement('div');
@@ -109,6 +96,7 @@
       inputVal.value = '';
     })
   </script>
+  
 </body>
 
 </html>
