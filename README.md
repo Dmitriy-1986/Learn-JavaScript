@@ -166,7 +166,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/validate-form.html  | <a href="h
 
 https://dmitriy-1986.github.io/Learn-JavaScript/created-callback-function.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/created-callback-function.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/func-factorial.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/func-factorial.html ">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
