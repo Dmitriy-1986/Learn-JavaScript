@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .alert-name {
+      display: none;
+      font-style: italic;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>learn js</h2>
+
+  <!-- Form One -->
+  <form id="form">
+    Name: <br>
+    <input type="text" id="name">
+    <input type="submit" value="Отправить">
+    <span id="alertName" class="alert-name">Введите ваше имя!</span>
+  </form>
+
+  <!-- Form Two -->
+  <form name="myForm" onsubmit="return validateForm()">
+    Surname: <br>
+    <input type="text" name="surname">
+    <input type="submit" value="Отправить">
+    <span id="alertDanger" class="alert-name">Введите вашу фамилию!</span>
+  </form>
+
+  <script>
+    /* Реализация формы 1 */
+    let form = document.getElementById('form');
+    let name = document.getElementById('name');
+
+    form.onsubmit = function () {
+      if (name.value == null || name.value == '') {
+        document.getElementById('alertName').style.display = 'block';
+        return false;
+      }
+    }
+
+    /* Функция формы 2 */
+    function validateForm() {
+      let inputSurname = document.forms['myForm']['surname'].value;
+      if (inputSurname == null || inputSurname == '') {
+        document.getElementById('alertDanger').style.display = 'block';
+        return false;
+      }
+    }
+    
+  </script>
+</body>
+
+</html>
