@@ -168,7 +168,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/created-callback-function.html  
 
 https://dmitriy-1986.github.io/Learn-JavaScript/func-factorial.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/func-factorial.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/spread-operator.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/spread-operator.html ">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
