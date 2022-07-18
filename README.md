@@ -170,7 +170,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/func-factorial.html  | <a href="
 
 https://dmitriy-1986.github.io/Learn-JavaScript/spread-operator.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/spread-operator.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/event-target-list-display-none.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ event-target-list-display-none.html">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
