@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<h2>Удалить елемнт списка по клику</h2>
+    <script>
+        // Создадим список
+        var ul = document.createElement('ul');
+        document.body.appendChild(ul);
+        let dataList = ['element - A', 'element - B', 'element - C'];
+        for (let i = 0; i < dataList.length; i++) {
+            var li = document.createElement('li');
+            li.innerHTML = dataList[i] + ' ' + ' .............. удалить';
+            ul.appendChild(li);
+            
+        }
+
+        function hide(e) {
+            // e.target ссылается на кликнутый <li> элемент
+            // Он отличается от e.currentTarget который будет ссылаться на родительский <ul> в этом контексте
+            e.target.style.display = 'none';
+        }
+
+        // Назначим обработчик к списку
+        // Он будет вызван когда кликнут на любой <li>
+        ul.addEventListener('click', hide, false);
+    </script>
+</body>
+
+</html>
