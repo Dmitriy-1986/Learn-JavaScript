@@ -174,7 +174,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/event-target-list-display-none.h
 
 https://dmitriy-1986.github.io/Learn-JavaScript/text-replacement-on-click.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/text-replacement-on-click.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/ternarniy-operator.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ternarniy-operator.html ">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
