@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1100px;
+            min-height: calc(100vh - 36px);
+            margin: 0 auto;
+            padding: 10px;
+            box-shadow: 1px 2px 3px  rgba(0, 0, 0, .3);
+        }
+        .btn-menu {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px;
+            box-shadow: 1px 2px 3px  rgba(0, 0, 0, .3);
+            transition-duration: 500ms;
+        }
+        .btn-menu:hover {
+            box-shadow: 1px 2px 3px  rgba(0, 128, 255, .3);
+        }
+
+        .menu, .context-menu {
+            display: none;
+            /*position: fixed;*/
+            padding: 10px;
+            margin: 5px;
+            box-shadow: 1px 2px 3px  rgba(0, 0, 0, .3);
+        }
+
+        .menu-item {
+            padding: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .menu-item a, .context-menu a {
+            text-decoration: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p class="btn-menu">Click Me</p>
+    <div class="menu">
+        <span class="close">Close</span>
+        <div class="menu-item"><a href="javascript:void(0)">Facebook</a></div>
+        <div class="menu-item"><a href="javascript:void(0)">Twitter</a></div>
+        <div class="menu-item"><a href="javascript:void(0)">Instagram</a></div>
+    </div>
+    <div class="context-menu">
+        <span class="close">Close</span>
+        <div class="menu-item"><a href="javascript:void(0)">Facebook 2</a></div>
+        <div class="menu-item"><a href="javascript:void(0)">Twitter 2</a></div>
+        <div class="menu-item"><a href="javascript:void(0)">Instagram 2</a></div>
+    </div>
+</div>
+<script>
+
+    let menuDisplayed = false;
+    let menuBox = null;
+    let contextMenu = document.querySelector('.btn-menu');
+    contextMenu.addEventListener("contextmenu", (ev) => {
+        let left = ev.clientX;
+        let top = ev.clientY;
+
+        menuBox = document.querySelector(".context-menu");
+        menuBox.style.left = left + 5 + "px";
+        menuBox.style.top = top + 5 + "px";
+        menuBox.style.display = "block";
+
+        ev.preventDefault();
+
+        menuDisplayed = true;
+
+        window.addEventListener("click", (ev) => {
+            if (menuDisplayed == true) {
+                menuBox.style.display = "none";
+            }
+        });
+    });
+
+    contextMenu.onclick = function () {
+        document.querySelector('.menu').classList.toggle('active');
+    }
+
+    let close = document.querySelector('.close');
+    close.addEventListener('click', function (e) {
+        document.querySelector('.menu').classList.remove('active');
+    })
+</script>
+</body>
+</html>
