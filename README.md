@@ -176,7 +176,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/text-replacement-on-click.html  
 
 https://dmitriy-1986.github.io/Learn-JavaScript/ternarniy-operator.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ternarniy-operator.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/context-menu.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/context-menu.html ">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
