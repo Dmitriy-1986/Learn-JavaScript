@@ -186,7 +186,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/copy-text-preventDefault.html  |
 
 https://dmitriy-1986.github.io/Learn-JavaScript/past-textarea-preventdefault.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/past-textarea-preventdefault.html">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/DOMContentLoaded.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/DOMContentLoaded.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
