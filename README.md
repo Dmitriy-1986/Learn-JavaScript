@@ -182,7 +182,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/event-context-menu.html  | <a hr
 
 https://dmitriy-1986.github.io/Learn-JavaScript/clientX-clientY-mouse-click.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/clientX-clientY-mouse-click.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/copy-text-preventDefault.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/copy-text-preventDefault.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
