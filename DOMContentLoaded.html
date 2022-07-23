@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>DOM Content Loaded</h2>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo ipsum eveniet vitae voluptas ad tempore non
+    mollitia animi magni, dolore recusandae debitis nisi a expedita, ex, sit dolorum facere deserunt atque sequi.
+    Repellat nemo animi itaque modi nisi, quam, numquam adipisci commodi culpa incidunt delectus esse! Eius impedit
+    natus non explicabo incidunt perspiciatis eveniet ipsum facere culpa, eligendi dolorum ratione libero quae, quisquam
+    ut earum itaque a, illo inventore voluptate accusantium est reprehenderit. Porro repellendus itaque, quidem
+    voluptatum officia molestiae dolore cum corporis at, ipsum odit nisi possimus autem, assumenda dolorem ut! Eligendi
+    nam eius illum nemo alias ratione error!</p>
+  <div class="msg"></div>
+  <script>
+    console.time('Загрузка страницы');
+
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('DOM готов!');
+      document.querySelector('div').innerHTML = 'DOM готов!';
+    });
+    
+    console.timeEnd('Загрузка страницы');
+  </script>
+</body>
+
+</html>
