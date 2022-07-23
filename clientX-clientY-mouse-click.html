@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html onclick="showCoords(event)">
+
+<head>
+  <title>Пример для clientX\clientY</title>
+</head>
+
+<body>
+
+  <p>Для показа координат мышки кликните в любом месте страницы.</p>
+
+  <script>
+    function showCoords(evt) {
+      alert(
+        "clientX value: " + evt.clientX + "\n" +
+        "clientY value: " + evt.clientY + "\n"
+      );
+    }
+  </script>
+
+</body>
+
+</html>
