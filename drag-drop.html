@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #square {
+      border: 1px solid grey;
+      background-color: #cccccc;
+      box-shadow: 5px 5px 8px #cccccc;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="square"></div>
+
+  <script>
+    let square = document.querySelector('#square');
+    square.onmousedown = (e) => {
+      let coords = getCoords(square);
+      let shiftX = e.pageX - coords.left;
+      let shiftY = e.pageY - coords.top;
+      square.style.position = 'absolute';
+      document.body.append(square);
+      moveAt(e);
+
+      square.style.zIndex = 100;
+
+      function moveAt(e) {
+        square.style.left = e.pageX - shiftX + 'px';
+        square.style.top = e.pageY - shiftY + 'px';
+      }
+
+      document.onmousemove = (e) => {
+        moveAt(e);
+      }
+      square.onmouseup = () => {
+        document.onmousemove = null;
+        square.onmouseup = null;
+      };
+    }
+
+    square.ondragstar = () => {
+      return false;
+    };
+
+    function getCoords(elem) {
+      let box = elem.getBoundingClientRect();
+      return {
+        top: box.top + pageXOffset,
+        left: box.left + pageXOffset
+      };
+    }
+
+  </script>
+</body>
+
+</html>
