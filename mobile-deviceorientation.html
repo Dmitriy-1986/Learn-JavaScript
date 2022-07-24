@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  Положение по оси Z:
+  <div id="alpha">a</div>
+  Положение по оси X:
+  <div id="beta">b</div>
+  Положение по оси Y:
+  <div id="gamma">g</div>
+
+  <script>
+    window.addEventListener('deviceorientation', (event) => {
+      let alpha = event.alpha;
+      let beta = event.beta;
+      let gamma = event.gamma;
+
+      document.querySelector('#alpha').innerHTML = Math.floor(alpha);
+      document.querySelector('#beta').innerHTML = Math.floor(beta);
+      document.querySelector('#gamma').innerHTML = Math.floor(gamma);
+    }, false);
+  </script>
+</body>
+</html>
