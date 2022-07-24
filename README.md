@@ -194,7 +194,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/battery-level.html  | <a href="h
 
 https://dmitriy-1986.github.io/Learn-JavaScript/mobile-deviceorientation.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/mobile-deviceorientation.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/contextmenu-false.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/contextmenu-false.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
