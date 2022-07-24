@@ -190,7 +190,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/DOMContentLoaded.html  | <a href
 
 https://dmitriy-1986.github.io/Learn-JavaScript/event-Touch.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/event-Touch.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/battery-level.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/battery-level.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
