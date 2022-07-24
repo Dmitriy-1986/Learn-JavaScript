@@ -11,9 +11,9 @@
 <h2>Contextmenu false</h2>
 
 <script>
-    document.body.addEventListener('contextmenu', function(){
+    document.documentElement.oncontextmenu = function(){
         return false;
-    });
+    }
 </script>
 </body>
 </html>
