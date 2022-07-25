@@ -200,7 +200,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/data-table.html  | <a href="http
 
 https://dmitriy-1986.github.io/Learn-JavaScript/orientation-table.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/orientation-table.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/xhr-ready-web-page.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/xhr-ready-web-page.html ">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
