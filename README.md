@@ -198,7 +198,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/contextmenu-false.html  | <a hre
 
 https://dmitriy-1986.github.io/Learn-JavaScript/data-table.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/data-table.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/orientation-table.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/orientation-table.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
