@@ -204,7 +204,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/xhr-ready-web-page.html  | <a hr
 
 https://dmitriy-1986.github.io/Learn-JavaScript/spread.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/spread.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/rest.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/rest.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
