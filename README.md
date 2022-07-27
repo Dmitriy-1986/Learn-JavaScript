@@ -206,7 +206,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/spread.html  | <a href="https://
 
 https://dmitriy-1986.github.io/Learn-JavaScript/rest.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/rest.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/happy-cyber-police-day.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/happy-cyber-police-day.html">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
