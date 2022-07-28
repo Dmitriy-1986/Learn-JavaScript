@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tours = {
+            Turkey: 1200,
+            Egypt: 1500,
+            Spain: 2100,
+            Cyprus: 2400
+        }
+        Object.entries(tours).map(([country, cost]) => {
+            document.write(`${country.padEnd(20, '=')} 
+            Price: ${cost.toString().padEnd(7, '.00')}$<br>`);
+        })
+    </script>
+</body>
+</html>
