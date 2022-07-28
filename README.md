@@ -220,7 +220,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/destructurization-object.html  |
 
 https://dmitriy-1986.github.io/Learn-JavaScript/spred-rest.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/spred-rest.html ">Code</a> 
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/padStar-to-string.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/padStar-to-string.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
