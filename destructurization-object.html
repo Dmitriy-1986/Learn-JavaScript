@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Деструктуризация объекта</h2>
+    <script>
+        let user = {
+            name: 'Ivan',
+            s_name: 'Ivanov',
+            age: 25,
+            position: 'Full - stack developer',
+            country: 'Ukraine'
+        };
+
+        //ES3
+        let name = user.name;
+        let s_name = user.s_name;
+        let age = user.age;
+        let position = user.position;
+        let country = user.country;
+        document.write(`User info: 
+                        Name; ${name},<br>
+                        Second name: ${s_name},<br>
+                        Age: ${age},<br>
+                        Position: ${position},<br>
+                        Birth country: ${country}`);
+
+        document.write('<hr>');
+        //ES6
+        let {name2, s_name2, age2, position2, country2} = user;
+        document.write(`User info: <br>
+                        Name: ${name2},<br>
+                        Second name: ${s_name2},<br>
+                        Age: ${age},<br>
+                        Position company: ${position2},<br>
+                        Birth country: ${country}`);
+
+        document.write('<hr>');
+        //Переименование переменных
+        let {name: userName, s_name: secondName, age: userAge} = user;
+        document.write(`Hello, my name is ${userName} ${secondName}. I'm ${userAge} years old.`)
+    </script>
+</body>
+</html>
