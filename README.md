@@ -214,7 +214,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/destructurization-double.html  |
 
 https://dmitriy-1986.github.io/Learn-JavaScript/destructurization.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/destructurization.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/destructurization-object.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/destructurization-object.html">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
