@@ -222,9 +222,9 @@ https://dmitriy-1986.github.io/Learn-JavaScript/spred-rest.html  | <a href="http
 
 https://dmitriy-1986.github.io/Learn-JavaScript/padStar-to-string.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/padStar-to-string.html ">Code</a>
 
-https://dmitriy-1986.github.io/Learn-JavaScript/symbol-operator.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/symbol-operator.html ">Code</a>
+https://dmitriy-1986.github.io/Learn-JavaScript/padEnd-to-string.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/padEnd-to-string.html ">Code</a> 
 
-https://dmitriy-1986.github.io/Learn-JavaScript/padEnd-string.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/padEnd-string.html ">Code</a> 
+https://dmitriy-1986.github.io/Learn-JavaScript/symbol-operator.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/symbol-operator.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
