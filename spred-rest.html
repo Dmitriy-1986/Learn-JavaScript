@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>spred-rest</h2>
+    <script>
+        //SPRED
+        let langArr = ['C', 'C++', 'Java'];
+        let dynamicLangArr = ['Python', 'Ruby', 'PHP'];
+
+        //ES3
+        let newArr = dynamicLangArr.concat(langArr);
+        console.log(newArr);
+
+        //ES6
+        let languages = [...langArr, 'C#', 'JavaScript', ...dynamicLangArr, 'Go'];
+        console.log(languages);
+
+        /* /// */
+
+        //REST
+        let numbersArr = [123, 456, 789];
+        function addNumbers (arg1, arg2, arg3) {
+            return arg1 + arg2 + arg3;
+        }
+        //ES3
+        let result = addNumbers(numbersArr[0], numbersArr[1], numbersArr[2]);
+        console.log(result);
+        //ES6
+        let result2 = addNumbers(...numbersArr);
+        console.log(result2);
+    </script>
+</body>
+</html>
