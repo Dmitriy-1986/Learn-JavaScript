@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Деструктуризация</h2>
+
+    <script>
+        let arrFootball = ['Manchester United', 'Arsenal', 'Tottenham'];
+
+        let MU = arrFootball[0];
+        let ARS = arrFootball[1];
+        let TOT = arrFootball[2];
+        console.log(MU+', '+ARS+', '+TOT+'.');
+
+        let[desMU, desARS, desTOT] = arrFootball;
+        console.log(desMU+', '+desARS+', '+desTOT+'.');
+
+        //Выборочная деструктуризация
+        let[, , toTOT] = arrFootball;
+        console.log(toTOT);
+
+        //Переменнные по умолчанию
+        let[, , toTOT2, CHE = 'Chelsea'] = arrFootball;
+        console.log(`Tomorrow ${toTOT2} will play against ${CHE} game starts at 21:45.`);
+    </script>
+</body>
+</html>
