@@ -210,7 +210,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/happy-cyber-police-day.html  | <
 
 https://dmitriy-1986.github.io/Learn-JavaScript/work-DATE-method.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/work-DATE-method.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/destructurization-double.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/destructurization-double.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
