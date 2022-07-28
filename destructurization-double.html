@@ -27,6 +27,14 @@
         //Переменнные по умолчанию
         let[, , toTOT2, CHE = 'Chelsea'] = arrFootball;
         console.log(`Tomorrow ${toTOT2} will play against ${CHE} game starts at 21:45.`);
+        
+        //В функции
+        function showClubs([MU, ...others]) {
+            console.log(`${MU} will play against ${others}`);
+        }
+        showClubs(arrFootball);
+        
     </script>
+    
 </body>
 </html>
