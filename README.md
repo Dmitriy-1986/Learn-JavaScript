@@ -212,7 +212,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/work-DATE-method.html  | <a href
 
 https://dmitriy-1986.github.io/Learn-JavaScript/destructurization-double.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/destructurization-double.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/destructurization.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/destructurization.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
