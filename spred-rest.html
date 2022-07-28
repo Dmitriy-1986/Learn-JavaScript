@@ -34,6 +34,13 @@
         //ES6
         let result2 = addNumbers(...numbersArr);
         console.log(result2);
+        //rest to function
+        let stringsArray = [' JavaScript', ' React.js', ' Bootstrap', ' PHP', ' MySQL'];
+        let showMessage = (name, courses, ...rest) => {
+            console.log(`Hello, my name is ${name}. I finished ${courses}. I've learned ${rest}.`)
+        }
+        showMessage('Dima', 'ItStep', ...stringsArray);
+
     </script>
 </body>
 </html>
