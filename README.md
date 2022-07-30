@@ -226,7 +226,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/padEnd-to-string.html  | <a href
 
 https://dmitriy-1986.github.io/Learn-JavaScript/symbol-operator.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/symbol-operator.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/if-date.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/if-date.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
