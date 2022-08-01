@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 500px;
+            min-height: calc(100vh - 16px);
+            margin: 0 auto;
+            border: 1px solid #e5e5e5;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .all-blocks {
+            /* делает скролл в блоке */
+            overflow-x: scroll;
+            width: 100%;
+            height: auto;
+            padding: 5px;
+            border: solid 1px black;
+            /* Запрещает перенос на новую строку */
+            white-space: nowrap;
+        }
+
+        .block {
+            /* выстраивает блоки в один ряд */
+            display: inline-block;
+            width: 100px;
+            height: 300px;
+            border: 1px dotted black;
+            padding: 5px;
+            /* прячет содержимое которое вылазит из карточки */
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="all-blocks">
+                <div class="block">
+                    <h2>Duis</h2>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, facere.</p>
+                </div>
+                <div class="block">
+                    <h2>Duis</h2>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                </div>
+                <div class="block">
+                    <h2>Duis</h2>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                </div>
+                <div class="block">
+                    <h2>Duis</h2>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                </div>
+                <div class="block">
+                    <h2>Duis</h2>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                </div>
+                <div class="block">
+                    <h2>Duis</h2>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                </div>
+                <div class="block">
+                    <h2>Duis</h2>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                    <p>Lorem ipsum </p>
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
