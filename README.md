@@ -230,7 +230,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/if-date.html  | <a href="https:/
 
 https://dmitriy-1986.github.io/Learn-JavaScript/video.play-pause.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/video.play-pause.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/block-scroll-card-css.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/block-scroll-card-css.html">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
