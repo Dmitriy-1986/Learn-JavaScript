@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    const objTest = {    
+      message: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, distinctio?',
+      date: '02.08.2022'
+    };
+
+    let p = document.createElement('p');
+    p.innerHTML = Object.values(objTest) + '<br>';
+    p.innerHTML += Object.keys(objTest);
+    document.body.append(p);
+  </script>
+</body>
+
+</html>
