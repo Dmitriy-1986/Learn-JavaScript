@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    function myFunction(t) {
+      return (t < 4) ? 'Good night' : (t < 12) ? 'Good morning' : (t < 18) ? 'Good afternoon' : 'Good evening';
+    }
+
+    let date = new Date();
+    let hours = date.getHours();
+
+    alert(myFunction(hours));
+    console.log(myFunction(hours));
+    document.write(myFunction(hours));
+  </script>
+</body>
+
+</html>
