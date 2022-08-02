@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cursor {
+      box-shadow: 0 0 15px #000000;
+      transform: translate(-50%, -50%);
+      border: 1px solid #0000001a;
+      position: absolute;
+      border-radius: 50%;
+      aspect-ratio: 1;
+      z-index: 9;
+      width: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cursor"></div>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia excepturi ex, obcaecati eum illum voluptates
+    unde. Similique voluptates dolorum in dolores iusto error? Quas corporis officiis corrupti magni adipisci repellat
+    illo enim minus incidunt nostrum soluta aspernatur cum fugit, ab provident? Sapiente ullam, atque libero unde
+    quisquam dignissimos excepturi sit consequatur blanditiis aut neque non, quos voluptas consectetur cupiditate, nulla
+    officia quidem eum quasi! Voluptate ipsam tenetur eos quo libero! Corporis excepturi quaerat autem nam eius earum
+    natus, dicta ea culpa reiciendis sunt nostrum asperiores facere iusto neque voluptatum assumenda tenetur quae
+    possimus maiores impedit. Eius aut ipsa suscipit.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia excepturi ex, obcaecati eum illum voluptates
+    unde. Similique voluptates dolorum in dolores iusto error? Quas corporis officiis corrupti magni adipisci repellat
+    illo enim minus incidunt nostrum soluta aspernatur cum fugit, ab provident? Sapiente ullam, atque libero unde
+    quisquam dignissimos excepturi sit consequatur blanditiis aut neque non, quos voluptas consectetur cupiditate, nulla
+    officia quidem eum quasi! Voluptate ipsam tenetur eos quo libero! Corporis excepturi quaerat autem nam eius earum
+    natus, dicta ea culpa reiciendis sunt nostrum asperiores facere iusto neque voluptatum assumenda tenetur quae
+    possimus maiores impedit. Eius aut ipsa suscipit.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia excepturi ex, obcaecati eum illum voluptates
+    unde. Similique voluptates dolorum in dolores iusto error? Quas corporis officiis corrupti magni adipisci repellat
+    illo enim minus incidunt nostrum soluta aspernatur cum fugit, ab provident? Sapiente ullam, atque libero unde
+    quisquam dignissimos excepturi sit consequatur blanditiis aut neque non, quos voluptas consectetur cupiditate, nulla
+    officia quidem eum quasi! Voluptate ipsam tenetur eos quo libero! Corporis excepturi quaerat autem nam eius earum
+    natus, dicta ea culpa reiciendis sunt nostrum asperiores facere iusto neque voluptatum assumenda tenetur quae
+    possimus maiores impedit. Eius aut ipsa suscipit.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia excepturi ex, obcaecati eum illum voluptates
+    unde. Similique voluptates dolorum in dolores iusto error? Quas corporis officiis corrupti magni adipisci repellat
+    illo enim minus incidunt nostrum soluta aspernatur cum fugit, ab provident? Sapiente ullam, atque libero unde
+    quisquam dignissimos excepturi sit consequatur blanditiis aut neque non, quos voluptas consectetur cupiditate, nulla
+    officia quidem eum quasi! Voluptate ipsam tenetur eos quo libero! Corporis excepturi quaerat autem nam eius earum
+    natus, dicta ea culpa reiciendis sunt nostrum asperiores facere iusto neque voluptatum assumenda tenetur quae
+    possimus maiores impedit. Eius aut ipsa suscipit.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia excepturi ex, obcaecati eum illum voluptates
+    unde. Similique voluptates dolorum in dolores iusto error? Quas corporis officiis corrupti magni adipisci repellat
+    illo enim minus incidunt nostrum soluta aspernatur cum fugit, ab provident? Sapiente ullam, atque libero unde
+    quisquam dignissimos excepturi sit consequatur blanditiis aut neque non, quos voluptas consectetur cupiditate, nulla
+    officia quidem eum quasi! Voluptate ipsam tenetur eos quo libero! Corporis excepturi quaerat autem nam eius earum
+    natus, dicta ea culpa reiciendis sunt nostrum asperiores facere iusto neque voluptatum assumenda tenetur quae
+    possimus maiores impedit. Eius aut ipsa suscipit.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia excepturi ex, obcaecati eum illum voluptates
+    unde. Similique voluptates dolorum in dolores iusto error? Quas corporis officiis corrupti magni adipisci repellat
+    illo enim minus incidunt nostrum soluta aspernatur cum fugit, ab provident? Sapiente ullam, atque libero unde
+    quisquam dignissimos excepturi sit consequatur blanditiis aut neque non, quos voluptas consectetur cupiditate, nulla
+    officia quidem eum quasi! Voluptate ipsam tenetur eos quo libero! Corporis excepturi quaerat autem nam eius earum
+    natus, dicta ea culpa reiciendis sunt nostrum asperiores facere iusto neque voluptatum assumenda tenetur quae
+    possimus maiores impedit. Eius aut ipsa suscipit.</p>
+
+  <script>
+    let cursor = document.querySelector('.cursor');
+    const animateCursor = (e) => {
+      cursor.style.left = `${e.pageX}px`;
+      cursor.style.top = `${e.pageY}px`;
+    }
+
+    window.addEventListener('mousemove', animateCursor);
+  </script>
+</body>
+
+</html>
