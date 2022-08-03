@@ -236,9 +236,10 @@ https://dmitriy-1986.github.io/Learn-JavaScript/object-values.-object-keys.html 
 
 https://dmitriy-1986.github.io/Learn-JavaScript/ternarka-houre-date.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ternarka-houre-date.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/animate-cursor.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/animate-cursor.html ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/animate-cursor.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/animate-cursor.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+//счетчик 
+https://dmitriy-1986.github.io/Learn-JavaScript/count-func-for.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/count-func-for.html ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
