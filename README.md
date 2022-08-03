@@ -241,7 +241,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/animate-cursor.html  | <a href="
 //счетчик:<br> 
 https://dmitriy-1986.github.io/Learn-JavaScript/count-func-for.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/count-func-for.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/array-count.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/array-count.js ">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
