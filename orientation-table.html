@@ -38,6 +38,7 @@
         /* let dataJS = 'https://orientation.pp.ua/js/data.js' */
         for (let i = 0; i < data.length; i++) {
             let tr = document.createElement('tr');
+            tr.innerHTML += `<td class="brand-n-number">${(i + 1)}</td>`;
             tr.innerHTML += `<td class="brand-n-number">${data[i].brand}</td>`;
             tr.innerHTML += `<td class="brand-n-number">${data[i].number}</td>`;
             tr.innerHTML += `<td class="msg">${data[i].msg}</td>`;
