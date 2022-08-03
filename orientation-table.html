@@ -18,6 +18,11 @@
             padding: 5px;
         }
 
+        .number {
+            width: 50px;
+            text-align: center;
+        }
+        
         .brand-n-number {
             width: 180px;
             text-align: center;
@@ -33,12 +38,12 @@
 
         let body = document.body;
         let table = document.createElement('table');
-        table.innerHTML = '<tr><th>Марка авто</th><th>Державний номер</th><th>Повідомлення</th></tr>';
+        table.innerHTML = '<tr><th>№ з/п</th><th>Марка авто</th><th>Державний номер</th><th>Повідомлення</th></tr>';
 
         /* let dataJS = 'https://orientation.pp.ua/js/data.js' */
         for (let i = 0; i < data.length; i++) {
             let tr = document.createElement('tr');
-            tr.innerHTML += `<td class="brand-n-number">${(i + 1)}</td>`;
+            tr.innerHTML += `<td class="number">${(i + 1)}</td>`;
             tr.innerHTML += `<td class="brand-n-number">${data[i].brand}</td>`;
             tr.innerHTML += `<td class="brand-n-number">${data[i].number}</td>`;
             tr.innerHTML += `<td class="msg">${data[i].msg}</td>`;
