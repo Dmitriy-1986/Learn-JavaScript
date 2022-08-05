@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /* 
+    Promise - предоставляют удобный интерфейс организации асинхронного кода.
+
+    Promise - это специальный объект, который содержит свое состояние. Вначале ожидание - pending,  затем onFulfield - 
+    срабатывает, когда promise выполнен успешно.
+    onRejected - когда promise в состоянии выполнен с ошибкой.
+
+    Код которому надо сделать что то асинхронно создает объект
+    promise и возвращает его. Внешний код, получив promise 
+    навешивает на него обработчик.
+    */
+    let promise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve('Hello, Promise!');
+      }, 1000);
+
+      setTimeout(() => {
+        reject(new Error('Error called!'));
+      }, 2000)
+    });
+
+    /* 
+    promise.then - навешивает обработчик на успешный результат или ошибку.
+    */
+    promise
+    .then(result => console.log(result))
+    .catch(error => console.log(error));
+
+  </script>
+</body>
+</html>
