@@ -253,7 +253,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/callback-function.js  | <a href=
 //img to size
 https://dmitriy-1986.github.io/Learn-JavaScript/img-to-size.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/img-to-size.html ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/operator-AND.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/operator-AND.js ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
