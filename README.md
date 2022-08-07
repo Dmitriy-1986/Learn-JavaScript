@@ -255,7 +255,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/img-to-size.html  | <a href="htt
 
 https://dmitriy-1986.github.io/Learn-JavaScript/operator-AND.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/operator-AND.js ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/operator-OR.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/operator-OR.js ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
