@@ -19,3 +19,5 @@ if(a && b) {
 
 /* */
 b && console.log('Выполнено!');
+/* */
+a && console.log('Выполнено!') ? a : console.log('Не Выполнено!');
