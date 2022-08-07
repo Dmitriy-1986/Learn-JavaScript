@@ -250,6 +250,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/work-obj.js  | <a href="https://
 https://dmitriy-1986.github.io/Learn-JavaScript/increase-funcs.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/increase-funcs.js ">Code</a>
 
 https://dmitriy-1986.github.io/Learn-JavaScript/callback-function.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/callback-function.js ">Code</a>
+<br>
 //img to size
 https://dmitriy-1986.github.io/Learn-JavaScript/img-to-size.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/img-to-size.html ">Code</a>
 
@@ -257,7 +258,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/operator-AND.js  | <a href="http
 
 https://dmitriy-1986.github.io/Learn-JavaScript/operator-OR.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/operator-OR.js ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/try-catch.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/try-catch.js ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
