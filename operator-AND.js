@@ -16,3 +16,6 @@ if(a && b) {
 } else {
     console.log(false);
 }
+
+/* */
+b && console.log('Выполнено!');
