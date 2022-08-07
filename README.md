@@ -250,8 +250,8 @@ https://dmitriy-1986.github.io/Learn-JavaScript/work-obj.js  | <a href="https://
 https://dmitriy-1986.github.io/Learn-JavaScript/increase-funcs.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/increase-funcs.js ">Code</a>
 
 https://dmitriy-1986.github.io/Learn-JavaScript/callback-function.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/callback-function.js ">Code</a>
-<br>
-//img to size
+
+//img to size:<br> 
 https://dmitriy-1986.github.io/Learn-JavaScript/img-to-size.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/img-to-size.html ">Code</a>
 
 https://dmitriy-1986.github.io/Learn-JavaScript/operator-AND.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/operator-AND.js ">Code</a>
