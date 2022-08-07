@@ -264,7 +264,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/forEach.js  | <a href="https://g
 
 https://dmitriy-1986.github.io/Learn-JavaScript/example.json  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/example.json ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/example-promise-json.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/example-promise-json.js ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
