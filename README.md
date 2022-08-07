@@ -260,7 +260,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/operator-OR.js  | <a href="https
 
 https://dmitriy-1986.github.io/Learn-JavaScript/try-catch.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/try-catch.js ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/forEach.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/forEach.js ">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
