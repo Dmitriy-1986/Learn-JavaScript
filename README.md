@@ -266,7 +266,7 @@ https://dmitriy-1986.github.io/Learn-JavaScript/example.json  | <a href="https:/
 
 https://dmitriy-1986.github.io/Learn-JavaScript/example-promise-json.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/example-promise-json.js ">Code</a>
 
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+https://dmitriy-1986.github.io/Learn-JavaScript/проНПУ.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/проНПУ.html">Code</a>
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
