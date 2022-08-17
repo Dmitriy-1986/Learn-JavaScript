@@ -1,10 +1,10 @@
-<!doctype html>
+       <!doctype html>
 <html lang="en">
   <head>
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Тест</title>
+<title>Огневая подготовка</title>
 <style>
  *{
      box-sizing: border-box;
@@ -16,16 +16,29 @@
  }
  
  header {
-   color: #141619;
-   background: #d3d3d4;
-   border: 1px solid #bcbebf;
+   color: #636464;
+   background: #fefefe;;
+   border: 1px solid #fdfdfe;
    padding: 10px;
  }
+ h3, h4 {
+	margin: 10px;
+ }
  
- .container {
-   max-width: 1110px;
+ #container {
+   max-width: 1100px;
    margin: 0 auto;
-   padding: 10px;
+ }
+ 
+ .block {
+	padding: 10px;
+	color: #212529;
+ }
+ 
+ .blocks-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
  }
  
  hr {
@@ -70,12 +83,14 @@
 </style>
   </head>
   <body>
-  <header>
+  
+    
+<div id="container">
+<header>
     <h3>Тест по огневой подготовке</h3>
     <h4>Материальная часть оружия</h4>
     </header> 
-    
-<div id="container">
+<div class="block">	
 <p>Какой калибр пистолета Макарова?</p>
 <input type ="radio" name="r1" value="9 мм">9 мм
 <input type ="radio" name="r1">5,45 мм
@@ -170,10 +185,12 @@
 
 <p id="result" class="result"></p>
 
+<div class="blocks-btn">
 <input type="button" value="Проверить" id="btn1" class="btn"/>
 <input type="button" value="Сбросить" id="btn2" class="btn"/>
 </div>
-
+</div>
+</div>
 
 <script>
   let count1, count2, count3, count4, count5, count6, count7, count8, count9, count10;
@@ -360,11 +377,3 @@ btn2.addEventListener('click', function() {
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
