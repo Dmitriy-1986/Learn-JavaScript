@@ -15,21 +15,28 @@
  }
  
  .danger {
-     color: red;
+     color: #dc3545;
+ }
+ 
+ .btn {
+     padding: 10px 15px;
  }
 </style>
   </head>
   <body>
     <h3>Тест по огневой подготовке</h3>
- <hr>  
+    <h4>Материальная часть оружия</h4>
+    
+<hr>  
 <p>Какой калибр пистолета Макарова?</p>
 <input type ="radio" name="r1" value="9 мм">9 мм
 <input type ="radio" name="r1">5,45 мм
 <input type ="radio" name="r1">7,62 мм
+
 <p id="msg-1"></p>
 <hr>
 
-<p>Какая убойная сила пули АКСУ-74?</p>
+<p>Какая убойная сила пули АКС-74У?</p>
 <input type ="radio" name="r2" >800 м
 <input type ="radio" name="r2" value="1100 м">1100 м
 <input type ="radio" name="r2">1500 м
@@ -38,7 +45,7 @@
 <p id="msg-2"></p>
 <hr>
 
-<p>Какая прицельная дальность  АКСУ-74?</p>
+<p>Какая прицельная дальность  АКС-74У?</p>
 <input type ="radio" name="r3" >400 м
 <input type ="radio" name="r3" >1100 м
 <input type ="radio" name="r3" value="500 м">500 м
@@ -46,12 +53,80 @@
 
 <p id="msg-3"></p>
 <hr>
+ 
+<p>В состав основных частей и механизмов пистолета Макарова входит затвор с:</p>
+<input type ="radio" name="r4">Ударником, отбивателем и предохранителем
+<br>
+<input type ="radio" name="r4" value="Ударником, выбрасывателем и предохранителем">Ударником, выбрасывателем и предохранителем
+<br>
+<input type ="radio" name="r4">Ударником, курком и выбрасывателем
 
-<input type="button" value="проверить" id="btn1"/>
+<p id="msg-4"></p>
+<hr>
+
+<p>Местонахождение спусковой скобы на пистолете Форт-17</p>
+<input type ="radio" name="r5">Затвор
+<br>
+<input type ="radio" name="r5" value="Рамка пистолета">Рамка пистолета
+<br>
+<input type ="radio" name="r5">Ударно - спусковой механизм
+
+<p id="msg-5"></p>
+<hr>
+
+<p>Какая общая длина пистолета Форт-17?</p>
+<input type ="radio" name="r6" value="180 мм">180 мм
+<input type ="radio" name="r6">175 мм
+<input type ="radio" name="r6">165 мм
+
+<p id="msg-6"></p>
+<hr>
+
+<p>Что предназначено для разбивания капсуля патрона в ПМ?</p>
+<input type ="radio" name="r7" >Затвор
+<input type ="radio" name="r7">Курок
+<input type ="radio" name="r7" value="Ударник">Ударник
+
+<p id="msg-7"></p>
+<hr>
+
+<p>В состав чего относиться боевая пружина в пистолете Макарова?</p>
+<input type ="radio" name="r8" value="Ударно-спусковому механизму">Ударно-спускового механизма
+<br>
+<input type ="radio" name="r8">Затвора
+<br>
+<input type ="radio" name="r8" >Рукоятки пистолета
+
+<p id="msg-8"></p>
+<hr>
+<p>Какая боевая скорострельность пистолета Форт-12?</p>
+<input type ="radio" name="r9" value="40 выстрелов/мин."> 40 выстрелов/мин.
+<br>
+<input type ="radio" name="r9">
+30 выстрелов/мин.
+<br>
+<input type ="radio" name="r9">
+25 выстрелов/мин.
+<p id="msg-9"></p>
+<hr>
+
+<p>Газовая трубка АКС-74У служит для:</p>
+<input type ="radio" name="r10" >Отвода пороховых газов
+<br>
+<input type ="radio" name="r10" value="Направления движения газового поршня">Направления движения газового поршня
+<br>
+<input type ="radio" name="r10">Приведению в действие механизмов автомата
+
+<p id="msg-10"></p>
+<hr>
+
+
+<input type="button" value="Проверить" id="btn1" class="btn"/>
+
 <p id="result"></p>
 
 <script>
-  let count1, count2, count3;
+  let count1, count2, count3, count4, count5, count6, count7, count8, count9, count10;
   
 btn1.addEventListener('click',
 function() {
@@ -79,7 +154,7 @@ function() {
    for (var i = 0; i < inp.length; i++) {
         
         if (inp2[1].type === "radio" && inp2[1].checked) {
-            p2.innerHTML= "Вы выбрали правильный ответ, убойная сила АКСУ-74: " + inp2[1].value;
+            p2.innerHTML= "Вы выбрали правильный ответ, убойная сила АКС-74У: " + inp2[1].value;
             p2.className = 'msg';
             count2 = 1;           
         
@@ -96,7 +171,7 @@ function() {
     for (var i = 0; i < inp3.length; i++) {
         
         if (inp3[2].type === "radio" && inp3[2].checked) {
-            p3.innerHTML= "Вы выбрали правильный ответ, прицельная дальность АКСУ-74: " + inp3[2].value;
+            p3.innerHTML= "Вы выбрали правильный ответ, прицельная дальность АКС-74У: " + inp3[2].value;
             p3.className = 'msg';
             count3 = 1;
         } else {
@@ -106,7 +181,123 @@ function() {
         }       
    };
    
-   let count = count1+count2+count3; 
+   /* inp 4 */
+   let inp4 = document.getElementsByName("r4");
+   let p4 = document.getElementById("msg-4");
+   
+    for (var i = 0; i < inp4.length; i++) {
+        
+        if (inp4[1].type === "radio" && inp4[1].checked) {
+            p4.innerHTML= "Вы выбрали правильный ответ, в состав основных частей и механизмов пистолета Макарова входит затвор с: " + inp4[1].value;
+            p4.className = 'msg';
+            count4 = 1;
+        } else {
+            p4.innerHTML= "Вы выбрали неправильный ответ";
+            count4 = 0;  
+            p4.className = 'danger';
+        }       
+   };
+   
+   /* inp 5 */
+    let inp5 = document.getElementsByName("r5");
+    let p5 = document.getElementById("msg-5");
+  
+    for (var i = 0; i < inp.length; i++) {
+        
+        if (inp5[1].type === "radio" && inp5[1].checked) {
+            p5.innerHTML= "Вы выбрали правильный ответ, местонахождение спусковой скобы на пистолете Форт-17: " + inp5[1].value;
+            p5.className = 'msg';
+            count5 = 1;
+        } else {
+            p5.innerHTML= "Вы выбрали неправильный ответ";
+            count5 = 0;             p5.className = 'danger';     
+        }       
+   };
+   
+   /* inp 6 */
+    let inp6 = document.getElementsByName("r6");
+    let p6 = document.getElementById("msg-6");
+  
+    for (var i = 0; i < inp.length; i++) {
+        
+        if (inp6[0].type === "radio" && inp6[0].checked) {
+            p6.innerHTML= "Вы выбрали правильный ответ, общая длина пистолета Форт-17: " + inp6[0].value;
+            p6.className = 'msg';
+            count6 = 1;
+        } else {
+            p.innerHTML= "Вы выбрали неправильный ответ";
+            count6 = 0;             p6.className = 'danger';     
+        }       
+   };
+   
+   /* inp 7 */
+    let inp7 = document.getElementsByName("r7");
+    let p7 = document.getElementById("msg-7");
+  
+    for (var i = 0; i < inp7.length; i++) {
+        
+        if (inp7[2].type === "radio" && inp7[2].checked) {
+            p7.innerHTML= "Вы выбрали правильный ответ, для разбивания капсуля патрона в ПМ предназначен: " + inp7[2].value;
+            p7.className = 'msg';
+            count7 = 1;
+        } else {
+            p7.innerHTML= "Вы выбрали неправильный ответ";
+            count7 = 0;             p7.className = 'danger';     
+        }       
+   };
+   
+    /* inp 8 */
+    let inp8 = document.getElementsByName("r8");
+    let p8 = document.getElementById("msg-8");
+  
+    for (var i = 0; i < inp8.length; i++) {
+        
+        if (inp8[0].type === "radio" && inp8[0].checked) {
+            p8.innerHTML= "Вы выбрали правильный ответ, боевая пружина в пистолете Макарова относиться к: " + inp8[0].value;
+            p8.className = 'msg';
+            count8 = 1;
+        } else {
+            p8.innerHTML= "Вы выбрали неправильный ответ";
+            count8 = 0;             p8.className = 'danger';     
+        }       
+   };
+   
+   /* inp 9 */
+    let inp9 = document.getElementsByName("r9");
+    let p9 = document.getElementById("msg-9");
+  
+    for (var i = 0; i < inp9.length; i++) {
+        
+        if (inp9[0].type === "radio" && inp9[0].checked) {
+            p9.innerHTML= "Вы выбрали правильный ответ, боевая скорострельность пистолета Форт-12: " + inp9[0].value;
+            p9.className = 'msg';
+            count9 = 1;
+        } else {
+            p9.innerHTML= "Вы выбрали неправильный ответ";
+            count9 = 0;             p9.className = 'danger';     
+        }       
+   };
+   
+   /* inp 10 */
+    let inp10 = document.getElementsByName("r10");
+    let p10 = document.getElementById("msg-10");
+  
+    for (var i = 0; i < inp10.length; i++) {
+        
+        if (inp10[1].type === "radio" && inp10[1].checked) {
+            p10.innerHTML= "Вы выбрали правильный ответ, газовая трубка АКС-74У служит для: " + inp10[1].value;
+            p10.className = 'msg';
+            count10 = 1;
+        } else {
+            p10.innerHTML= "Вы выбрали неправильный ответ";
+            count10 = 0;             p10.className = 'danger';     
+        }       
+   };
+   
+   
+   /* Результаты */
+   
+   let count = count1+count2+count3+count4+count5+count6+count7+count8+count9+count10; 
    
    let result = document.getElementById('result');
    result.innerHTML = `Ваш результат, правильных ответов: <b>${count}</b>`;
@@ -114,4 +305,11 @@ function() {
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
 
