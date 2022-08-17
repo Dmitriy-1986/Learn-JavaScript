@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Тест</title>
 <style>
- * {
+ *{
      font-family: sans-serif;
  }
  
  .msg {
      color: #0d6efd;
+ }
+ 
+ .danger {
+     color: red;
  }
 </style>
   </head>
@@ -22,7 +26,7 @@
 <input type ="radio" name="r1" value="9 мм">9 мм
 <input type ="radio" name="r1">5,45 мм
 <input type ="radio" name="r1">7,62 мм
-<p id="msg-1" class='msg'></p>
+<p id="msg-1"></p>
 <hr>
 
 <p>Какая убойная сила пули АКСУ-74?</p>
@@ -31,7 +35,7 @@
 <input type ="radio" name="r2">1500 м
 <br>
 
-<p id="msg-2" class='msg'></p>
+<p id="msg-2"></p>
 <hr>
 
 <p>Какая прицельная дальность  АКСУ-74?</p>
@@ -40,7 +44,7 @@
 <input type ="radio" name="r3" value="500 м">500 м
 <br>
 
-<p id="msg-3" class='msg'></p>
+<p id="msg-3"></p>
 <hr>
 
 <input type="button" value="проверить" id="btn1"/>
@@ -60,11 +64,11 @@ function() {
         
         if (inp[0].type === "radio" && inp[0].checked) {
             p.innerHTML= "Вы выбрали правильный ответ, калибр ПМ: " + inp[0].value;
+            p.className = 'msg';
             count1 = 1;
         } else {
             p.innerHTML= "Вы выбрали неправильный ответ";
-            count1 = 0; 
-            p.style.color = 'red';          
+            count1 = 0;             p.className = 'danger';     
         }       
    };
    
@@ -76,12 +80,12 @@ function() {
         
         if (inp2[1].type === "radio" && inp2[1].checked) {
             p2.innerHTML= "Вы выбрали правильный ответ, убойная сила АКСУ-74: " + inp2[1].value;
+            p2.className = 'msg';
             count2 = 1;           
         
    }  else {
             p2.innerHTML= "Вы выбрали неправильный ответ";
-            count2 = 0; 
-            p2.style.color = 'red';            
+            count2 = 0;            p2.className = 'danger';            
         }       
    }
    
@@ -93,11 +97,12 @@ function() {
         
         if (inp3[2].type === "radio" && inp3[2].checked) {
             p3.innerHTML= "Вы выбрали правильный ответ, прицельная дальность АКСУ-74: " + inp3[2].value;
+            p3.className = 'msg';
             count3 = 1;
         } else {
             p3.innerHTML= "Вы выбрали неправильный ответ";
             count3 = 0;  
-            p3.style.color = 'red';     
+            p3.className = 'danger';
         }       
    };
    
@@ -109,3 +114,4 @@ function() {
 </script>
 </body>
 </html>
+
