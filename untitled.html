@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тест</title>
+
+  </head>
+  <body>
+  <header>
+    <h3>Тест по огневой подготовке</h3>
+    <h4>Материальная часть оружия</h4>
+    </header> 
+    
+<div id="container">
+<p>Какой калибр пистолета Макарова?</p>
+<input type ="radio" name="r1" value="9 мм">9 мм
+<input type ="radio" name="r1">5,45 мм
+<input type ="radio" name="r1">7,62 мм
+
+<p id="msg-1"></p>
+<hr>
+
+<p>Какой калибр пистолета Макарова?</p>
+<input type ="radio" name="r2" value="9 мм">9 мм
+<input type ="radio" name="r2">5,45 мм
+<input type ="radio" name="r2">7,62 мм
+
+<p id="msg-2"></p>
+<hr>
+<input type="button" value="Проверить" id="btn1" class="btn"/>
+<hr>
+<p id="result"></p>
+</div>
+
+
+<script>
+  
+  //let count = 0;
+  
+  function questions (radio, message, numKey, count){
+   
+    let makeCount;
+    let inp = document.getElementsByName(radio);
+    let p = document.getElementById(message);
+  
+    for (var i = 0; i < inp.length; i++) {
+        
+        if (inp[numKey].type === "radio" && inp[numKey].checked) {
+            p.innerHTML= "Вы выбрали правильный ответ.";
+            p.className = 'msg';
+             makeCount += count;
+        } else {
+            p.innerHTML= "Вы выбрали неправильный ответ.";         
+            p.className = 'danger';     
+        }       
+   };        
+  }
+  
+  function showQwestions() {
+    questions('r1', 'msg-1', 0);
+    questions('r2', 'msg-2', 1);
+    
+     /* Результаты */   
+   let c = 0;
+   
+   let result = document.getElementById('result');
+   result.innerHTML = 'Ваш результат: <b>' + makeCount + '</b> верных ответов.';
+   result.style.display = "block";
+  }
+  
+btn1.addEventListener('click',
+showQwestions);
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
