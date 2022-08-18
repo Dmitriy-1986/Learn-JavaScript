@@ -43,14 +43,14 @@
 <script>
 let btn1 = document.querySelector('#btn1');
 let btn2 = document.querySelector('#btn2');
-var amountCorrect = 0; 
+let amountCorrect = 0; 
   function questions (radio, message, numKey){
 	   
     let inp = document.getElementsByName(radio);
     let p = document.getElementById(message);
   
-    for (var i = 0; i < inp.length; i++) {
-        var radio = inp[i];
+    for (let i = 0; i < inp.length; i++) {
+        let radio = inp[i];
 		if(radio.value == "correct" && radio.checked) {
             amountCorrect++;			 
         }
