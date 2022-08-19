@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Вогнева підготовка</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    header {
+      background: #fefefe;
+      border: 1px solid #fdfdfe;
+      padding: 10px;
+    }
+
+    h2,
+    h4 {
+      color: #636464;
+      margin: 10px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid grey;
+    }
+
+    #container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-bottom: 50px;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .block-question {
+      padding: 10px;
+      color: #212529;
+    }
+
+    .question {
+      font-weight: bold;
+    }
+
+    input[type=radio] {
+      margin: 8px;
+    }
+
+    .info {
+      color: #055160;
+      background: #cff4fc;
+      border: 1px solid #b6effb;
+      padding: 10px;
+    }
+
+    .danger {
+      color: #842029;
+      background: #f8d7da;
+      border: 1px solid #f5c2c7;
+      padding: 10px;
+    }
+
+    .block-btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .verify {
+      padding: 10px 0;
+      width: 50%;
+      background: #198754;
+      border: 1px solid #198754;
+      color: #ffffff;
+    }
+
+    .verify:hover,
+    .verify:active {
+      background: #157347;
+      border: 1px solid #146c43;
+    }
+
+    .reset {
+      display: none;
+      padding: 10px 0;
+      width: 50%;
+      background: #dc3545;
+      border: 1px solid #dc3545;
+      color: #ffffff;
+    }
+
+    .reset:hover,
+    .reset:active {
+      background: #bb2d3b;
+      border: 1px solid #b02a37;
+    }
+
+    #result {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ffecb5;
+      background: #fff3cd;
+      color: #664d03;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div class="row">
+      <div class="col">
+        <header>
+          <h2>Тест з вогневої підготовки</h2>
+          <!-- Питання з матеріальної частини зброї -->
+          <h4>Материальна частина зброї</h4>
+        </header>
+        <div class="block-question">
+          <!-- Перше питання -->
+          <p class="question">1. Причиною затримки при срільбі "Осічка". Затвор в крайньому передньому положені,
+            курок спущений, але постріл не відбувся?</p>
+          <input type="radio" name="answer-1" value="correct">Всі відповіді вірні <br>
+          <input type="radio" name="answer-1">Осадження або злам бойової пружини <br>
+          <input type="radio" name="answer-1">Згущення мастила, забруднення або затирання ударника <br>
+
+          <p id="message-1"></p>
+          <hr>
+
+          <!-- Друге питання -->
+          <p class="question">2. До складу основних частин та механізмів пістолета ПМ затвор з: </p>
+          <input type="radio" name="answer-2">Ударником, відбивачем та запобіжником <br>
+          <input type="radio" name="answer-2" value="correct">Ударником, викидачем та запобіжником <br>
+          <input type="radio" name="answer-2">Ударником, курком та викидачем <br>
+
+          <p id="message-2"></p>
+          <hr>
+
+          <!-- Третє питання -->
+          <p class="question">3. Місце знаходження спускової скоби на пістолеті Форт-17</p>
+          <input type="radio" name="answer-3">Затвор <br>
+          <input type="radio" name="answer-3">Ударно-спусковий механізм <br>
+          <input type="radio" name="answer-3" value="correct">Рамка пістолета <br>
+
+          <p id="message-3"></p>
+          <hr>
+          <!-- Четверте питання -->
+          <p class="question">4. Загальна довжина пістолета Форт-17</p>
+          <input type="radio" name="answer-4">165 мм <br>
+          <input type="radio" name="answer-4" value="correct">180 мм <br>
+          <input type="radio" name="answer-4">175 мм <br>
+
+          <p id="message-4"></p>
+          <hr>
+          <!-- П*яте питання -->
+          <p class="question">5. Що призначено для розбивання капсуля патрона в ПМ? </p>
+          <input type="radio" name="answer-5" value="correct">Ударник <br>
+          <input type="radio" name="answer-5">Затвор <br>
+          <input type="radio" name="answer-5">Курок <br>
+
+          <p id="message-5"></p>
+          <hr>
+          <!-- Шосте питання -->
+          <p class="question">6. До складу чого відноситься бойова пружина у ПМ? </p>
+          <input type="radio" name="answer-6">Рукоятка пістолета <br>
+          <input type="radio" name="answer-6" value="correct">Ударно-спускового механізму <br>
+          <input type="radio" name="answer-6">Затвору <br>
+
+          <p id="message-6"></p>
+          <hr>
+          <!-- Сьоме питання -->
+          <p class="question">7. Яка бойова скорострільність пістолета Форт-12 </p>
+          <input type="radio" name="answer-7">30 постр/хв. <br>
+          <input type="radio" name="answer-7" value="correct">40 постр/хв. <br>
+          <input type="radio" name="answer-7">25 постр/хв. <br>
+
+          <p id="message-7"></p>
+          <hr>
+          <!-- Восьме питання -->
+          <p class="question">8. Викидач ПМ служить для: </p>
+          <input type="radio" name="answer-8">Утримання ударника <br>
+          <input type="radio" name="answer-8">Подачі патрона з магазина в патронник <br>
+          <input type="radio" name="answer-8" value="correct">Утримання патрону в чашечці затвору до зустрічі з
+          відбивачем <br>
+
+          <p id="message-8"></p>
+          <hr>
+          <!-- Дев*яте питання -->
+          <p class="question">9. Газова трубка АКС-74У служить для: </p>
+          <input type="radio" name="answer-9">Відводу порохових газів <br>
+          <input type="radio" name="answer-9">Приведення в дію механізмів автомата <br>
+          <input type="radio" name="answer-9" value="correct">Направлення руху газового поршня <br>
+
+          <p id="message-9"></p>
+          <hr>
+          <!-- Десяте питання -->
+          <p class="question">10. Відстань між двома протилежними полями (за діаметром) вогнепальної зброї визначає:</p>
+          <input type="radio" name="answer-10" value="correct">Калібр каналу ствола <br>
+          <input type="radio" name="answer-10">Патронник <br>
+          <input type="radio" name="answer-10">Нарізи <br>
+
+          <p id="message-10"></p>
+          <hr>
+          <!-- Одинадцте питання -->
+          <p class="question">11. Яка відстань найбільш ефективного вогню з пістолета Макарова? </p>
+          <input type="radio" name="answer-11">до 25 м <br>
+          <input type="radio" name="answer-11">до 315 м <br>
+          <input type="radio" name="answer-11" value="correct">до 50 м <br>
+
+          <p id="message-11"></p>
+          <hr>
+          <!-- Дванадцяте питання -->
+          <p class="question">12. До якої затримки при стрільбі призводить зношення бойового взводу курка або носика шептала
+            ПМ? </p>
+          <input type="radio" name="answer-12">Прихват (защемлення) гільзи затвором <br>
+          <input type="radio" name="answer-12" value="correct">Автоматична стрільба <br>
+          <input type="radio" name="answer-12">Осічка <br>
+
+          <p id="message-12"></p>
+          <hr>
+        </div>
+        <!-- Висновок результатів тестування -->
+        <p id="result"></p>
+
+        <!-- Кнопки -->
+        <div class="block-btn">
+          <input type="button" value="Превірити" id="btnVerify" class="btn verify">
+          <input type="button" value="Скинути" id="btnReset" class="btn reset">
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let btnVerify = document.querySelector('#btnVerify'),
+      btnReset = document.querySelector('#btnReset'),
+      amountCorrect = 0;
+
+    /* Функція для перебору елементів */
+    function questions(radio, message, numKey) {
+
+      let input = document.getElementsByName(radio);
+      let paragraph = document.getElementById(message);
+
+      for (let i = 0; i < input.length; i++) {
+        let answerClick = input[i];
+
+        if (answerClick.value == "correct" && answerClick.checked) {
+          amountCorrect++;
+        }
+
+        if (input[numKey].type === "radio" && input[numKey].checked) {
+          paragraph.innerHTML = "Вы обрали вірну відповідь.";
+          paragraph.className = 'info';
+        } else {
+          paragraph.innerHTML = "Вы обрали невірну відповідь.";
+          paragraph.className = 'danger';
+        }
+      };
+    }
+
+    function showQwestions() {
+      /* Опрацювання відповідей на питання тесту */
+      questions('answer-1', 'message-1', 0);
+      questions('answer-2', 'message-2', 1);
+      questions('answer-3', 'message-3', 2);
+      questions('answer-4', 'message-4', 1);
+      questions('answer-5', 'message-5', 0);
+      questions('answer-6', 'message-6', 1);
+      questions('answer-7', 'message-7', 1);
+      questions('answer-8', 'message-8', 2);
+      questions('answer-9', 'message-9', 2);
+      questions('answer-10', 'message-10', 0);
+      questions('answer-11', 'message-11', 2);
+      questions('answer-12', 'message-12', 1);
+
+      /* Виведення висновку результатів тесту */
+      let result = document.getElementById('result');
+      result.innerHTML = `Ваш результат: <b>${amountCorrect}</b> вірних відповідей!`;
+      result.style.display = "block";
+
+      btnVerify.style.display = 'none';
+      btnReset.style.display = 'block';
+    }
+
+    btnVerify.addEventListener('click', showQwestions);
+
+    btnReset.addEventListener('click', () => {
+      location.reload();
+    });
+  </script>
+</body>
+
+</html>
