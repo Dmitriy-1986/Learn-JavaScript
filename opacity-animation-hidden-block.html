@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>doc</title>
+<style>
+.block {
+  display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.b-show {
+  display: block;
+  animation: showBlock 1s linear forwards;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.b-close {
+  display: none;
+  animation: closeBlock 1s linear forwards;
+}
+
+@keyframes closeBlock {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="hidden">Hidden block and animation opacity effect to java script</div>
+<button class="btn">Button</button>
+<button class="close">Close</button>
+
+<script>
+var btn = document.querySelector('.btn');
+var close = document.querySelector('.close');
+var blockHidden = document.querySelector('.hidden');
+
+function showBlock() {
+  btn.classList.add('b-close');
+  close.classList.add('b-show');
+  blockHidden.classList.add('b-show');
+}
+
+function closeBlock() {
+    btn.classList.remove('b-close');
+    btn.classList.add('b-show');
+    close.classList.remove('b-show');
+    blockHidden.classList.remove('b-show');
+    
+}
+
+btn.addEventListener('click', showBlock);
+close.addEventListener('click', closeBlock);
+
+
+
+
+
+
+</script>
+</body>
+</html>
