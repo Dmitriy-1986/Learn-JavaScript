@@ -276,8 +276,8 @@ https://dmitriy-1986.github.io/Learn-JavaScript/opacity-animation-hidden-block.h
 
 html page: <br>
 https://dmitriy-1986.github.io/Learn-JavaScript/html-page.html  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/html-page.html ">Code</a> 
-
-<!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
+getSum.js: <br>
+https://dmitriy-1986.github.io/Learn-JavaScript/getSum.js  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/getSum.js ">Code</a> 
 
 <!-- https://dmitriy-1986.github.io/Learn-JavaScript/  | <a href="https://github.com/Dmitriy-1986/Learn-JavaScript/blob/master/ ">Code</a> -->
 
